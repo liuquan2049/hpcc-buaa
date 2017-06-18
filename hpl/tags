@@ -1,0 +1,956 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+1node	www/faqs.html	/^<H3><A NAME="1node">What about the one processor case ?<\/A><\/H3>$/;"	a
+A	include/hpl_panel.h	/^   double              * A;              \/* ptr to trailing part of A *\/$/;"	m	struct:HPL_S_panel
+A	include/hpl_pgesv.h	/^   double              * A;            \/* pointer to local piece of A *\/$/;"	m	struct:HPL_S_pmat
+A	src/cuda/fermi_dgemm.c	/^  long long A,B;$/;"	m	struct:dtrsm_gpu_64_mm_RT_kernel_args	file:
+A	src/cuda/fermi_dgemm.c	/^  long long A,B;$/;"	m	struct:dtrsm_gpu_64_mm_kernel_args	file:
+AMD_K7000	www/results.html	/^<H3><A NAME="AMD_K7000">4 AMD Athlon K7 500 Mhz (256 Mb) - (2x) 100 Mbs$/;"	a
+ATTR	src/pauxil/._HPL_dlaswp03N.c	/^/;"	v
+ATTR	src/pauxil/._HPL_indxl2g.c	/^/;"	v
+AUTOSPLIT	src/cuda/cuda_dgemm.c	65;"	d	file:
+AUTOSPLIT2	src/cuda/cuda_dgemm.c	68;"	d	file:
+Ablock	include/hpl_panel.h	/^   vsip_block_d        * Ablock;                           \/* A block *\/$/;"	m	struct:HPL_S_panel
+Add_	include/hpl_blas.h	190;"	d
+B	src/cuda/fermi_dgemm.c	/^  long long A,B;$/;"	m	struct:dtrsm_gpu_64_mm_RT_kernel_args	file:
+B	src/cuda/fermi_dgemm.c	/^  long long A,B;$/;"	m	struct:dtrsm_gpu_64_mm_kernel_args	file:
+CBLAS_DIAG	include/hpl_blas.h	93;"	d
+CBLAS_INDEX	include/hpl_blas.h	78;"	d
+CBLAS_ORDER	include/hpl_blas.h	80;"	d
+CBLAS_SIDE	include/hpl_blas.h	97;"	d
+CBLAS_TRANSPOSE	include/hpl_blas.h	84;"	d
+CBLAS_UPLO	include/hpl_blas.h	89;"	d
+CUBLAS_DGEMM_MF	src/cuda/cuda_dgemm.c	/^void CUBLAS_DGEMM_MF (const char *transa, const char *transb, const int *m,$/;"	f
+CUBLAS_DGEMM_MF	src/cuda/cuda_dgemm.c	91;"	d	file:
+CUBLAS_DTRSM_MF	src/cuda/cuda_dgemm.c	/^void CUBLAS_DTRSM_MF (const char *side, const char *uplo, const char *transa,$/;"	f
+CUBLAS_DTRSM_MF	src/cuda/cuda_dgemm.c	92;"	d	file:
+CblasColMajor	include/hpl_blas.h	82;"	d
+CblasConjTrans	include/hpl_blas.h	87;"	d
+CblasLeft	include/hpl_blas.h	98;"	d
+CblasLower	include/hpl_blas.h	91;"	d
+CblasNoTrans	include/hpl_blas.h	85;"	d
+CblasNonUnit	include/hpl_blas.h	94;"	d
+CblasRight	include/hpl_blas.h	99;"	d
+CblasRowMajor	include/hpl_blas.h	81;"	d
+CblasTrans	include/hpl_blas.h	86;"	d
+CblasUnit	include/hpl_blas.h	95;"	d
+CblasUpper	include/hpl_blas.h	90;"	d
+DEFINES	src/cuda/Makefile	/^DEFINES = -DMPI$/;"	m
+DGEMM_NN_E_KERNEL_ARGS_SIZE	src/cuda/fermi_dgemm.c	67;"	d	file:
+DGEMM_NT_E_KERNEL_ARGS_SIZE	src/cuda/fermi_dgemm.c	76;"	d	file:
+DGEMM_NT_TEX_KERNEL_ARGS_SIZE	src/cuda/fermi_dgemm.c	85;"	d	file:
+DINFO	include/hpl_panel.h	/^   double              * DINFO;      \/* ptr to replicated scalar info *\/$/;"	m	struct:HPL_S_panel
+DPIV	include/hpl_panel.h	/^   double              * DPIV;    \/* ptr to replicated jb pivot array *\/$/;"	m	struct:HPL_S_panel
+DTRSM_GPU_64_MM_KERNEL_ARGS_SIZE	src/cuda/fermi_dgemm.c	51;"	d	file:
+DTRSM_GPU_64_MM_RT_KERNEL_ARGS_SIZE	src/cuda/fermi_dgemm.c	57;"	d	file:
+ERRCODE	src/cuda/fermi_dgemm.c	128;"	d	file:
+F77_1_CHAR	include/hpl_blas.h	394;"	d
+F77_1_CHAR	include/hpl_blas.h	403;"	d
+F77_2_CHAR	include/hpl_blas.h	395;"	d
+F77_2_CHAR	include/hpl_blas.h	404;"	d
+F77_3_CHAR	include/hpl_blas.h	396;"	d
+F77_3_CHAR	include/hpl_blas.h	405;"	d
+F77_4_CHAR	include/hpl_blas.h	397;"	d
+F77_4_CHAR	include/hpl_blas.h	406;"	d
+F77_CHAR	include/hpl_blas.h	/^typedef struct { char *cp; F77_INTEGER len; } F77_CHAR;$/;"	t	typeref:struct:__anon6
+F77_CHAR	include/hpl_blas.h	/^typedef struct { char *cp; F77_INTEGER len; } F77_CHAR;$/;"	t	typeref:struct:__anon7
+F77_CHAR	include/hpl_blas.h	357;"	d
+F77_CHAR	include/hpl_blas.h	388;"	d
+F77_CHAR_DECL	include/hpl_blas.h	362;"	d
+F77_CHAR_DECL	include/hpl_blas.h	372;"	d
+F77_CHAR_DECL	include/hpl_blas.h	382;"	d
+F77_CHAR_DECL	include/hpl_blas.h	393;"	d
+F77_INTEGER	include/hpl_blas.h	198;"	d
+F77_INT_DECL	include/hpl_blas.h	409;"	d
+F77_INT_FUN	include/hpl_blas.h	418;"	d
+F77_INT_FUN	include/hpl_blas.h	421;"	d
+F77_MINOUT_DECL	include/hpl_blas.h	414;"	d
+F77_MIN_DECL	include/hpl_blas.h	413;"	d
+F77_SIN_DECL	include/hpl_blas.h	410;"	d
+F77_VINOUT_DECL	include/hpl_blas.h	412;"	d
+F77_VIN_DECL	include/hpl_blas.h	411;"	d
+F77_VOID_FUN	include/hpl_blas.h	417;"	d
+F77_VOID_FUN	include/hpl_blas.h	420;"	d
+F77daxpy	include/hpl_blas.h	246;"	d
+F77daxpy	include/hpl_blas.h	272;"	d
+F77daxpy	include/hpl_blas.h	287;"	d
+F77daxpy	include/hpl_blas.h	313;"	d
+F77daxpy	include/hpl_blas.h	337;"	d
+F77dcopy	include/hpl_blas.h	245;"	d
+F77dcopy	include/hpl_blas.h	271;"	d
+F77dcopy	include/hpl_blas.h	286;"	d
+F77dcopy	include/hpl_blas.h	312;"	d
+F77dcopy	include/hpl_blas.h	336;"	d
+F77dgemm	include/hpl_blas.h	253;"	d
+F77dgemm	include/hpl_blas.h	279;"	d
+F77dgemm	include/hpl_blas.h	294;"	d
+F77dgemm	include/hpl_blas.h	320;"	d
+F77dgemm	include/hpl_blas.h	344;"	d
+F77dgemv	include/hpl_blas.h	249;"	d
+F77dgemv	include/hpl_blas.h	275;"	d
+F77dgemv	include/hpl_blas.h	290;"	d
+F77dgemv	include/hpl_blas.h	316;"	d
+F77dgemv	include/hpl_blas.h	340;"	d
+F77dger	include/hpl_blas.h	251;"	d
+F77dger	include/hpl_blas.h	277;"	d
+F77dger	include/hpl_blas.h	292;"	d
+F77dger	include/hpl_blas.h	318;"	d
+F77dger	include/hpl_blas.h	342;"	d
+F77dscal	include/hpl_blas.h	244;"	d
+F77dscal	include/hpl_blas.h	270;"	d
+F77dscal	include/hpl_blas.h	285;"	d
+F77dscal	include/hpl_blas.h	311;"	d
+F77dscal	include/hpl_blas.h	335;"	d
+F77dswap	include/hpl_blas.h	243;"	d
+F77dswap	include/hpl_blas.h	269;"	d
+F77dswap	include/hpl_blas.h	284;"	d
+F77dswap	include/hpl_blas.h	310;"	d
+F77dswap	include/hpl_blas.h	334;"	d
+F77dtrsm	include/hpl_blas.h	254;"	d
+F77dtrsm	include/hpl_blas.h	280;"	d
+F77dtrsm	include/hpl_blas.h	295;"	d
+F77dtrsm	include/hpl_blas.h	321;"	d
+F77dtrsm	include/hpl_blas.h	345;"	d
+F77dtrsv	include/hpl_blas.h	250;"	d
+F77dtrsv	include/hpl_blas.h	276;"	d
+F77dtrsv	include/hpl_blas.h	291;"	d
+F77dtrsv	include/hpl_blas.h	317;"	d
+F77dtrsv	include/hpl_blas.h	341;"	d
+F77idamax	include/hpl_blas.h	247;"	d
+F77idamax	include/hpl_blas.h	273;"	d
+F77idamax	include/hpl_blas.h	288;"	d
+F77idamax	include/hpl_blas.h	314;"	d
+F77idamax	include/hpl_blas.h	338;"	d
+FERMI_DGEMM_H	src/cuda/fermi_dgemm.h	32;"	d
+HPL_1RING	include/hpl_comm.h	/^   HPL_1RING         = 401,                        \/* Increasing ring *\/$/;"	e	enum:__anon9
+HPL_1RING_M	include/hpl_comm.h	/^   HPL_1RING_M       = 402,             \/* Increasing ring (modified) *\/$/;"	e	enum:__anon9
+HPL_2RING	include/hpl_comm.h	/^   HPL_2RING         = 403,                      \/* Increasing 2-ring *\/$/;"	e	enum:__anon9
+HPL_2RING_M	include/hpl_comm.h	/^   HPL_2RING_M       = 404,           \/* Increasing 2-ring (modified) *\/$/;"	e	enum:__anon9
+HPL_2_MPI_TYPE	include/hpl_grid.h	101;"	d
+HPL_AMAX_PTIME	include/hpl_ptimer.h	/^{ HPL_AMAX_PTIME  = 201, HPL_AMIN_PTIME = 202, HPL_SUM_PTIME  = 203 }$/;"	e	enum:__anon2
+HPL_AMIN_PTIME	include/hpl_ptimer.h	/^{ HPL_AMAX_PTIME  = 201, HPL_AMIN_PTIME = 202, HPL_SUM_PTIME  = 203 }$/;"	e	enum:__anon2
+HPL_AUXIL_H	include/hpl_auxil.h	47;"	d
+HPL_BLAS_H	include/hpl_blas.h	47;"	d
+HPL_BLONG	include/hpl_comm.h	/^   HPL_BLONG         = 405,                         \/* long broadcast *\/$/;"	e	enum:__anon9
+HPL_BLONG_M	include/hpl_comm.h	/^   HPL_BLONG_M       = 406               \/* long broadcast (modified) *\/$/;"	e	enum:__anon9
+HPL_C2F_CHAR	include/hpl_blas.h	360;"	d
+HPL_C2F_CHAR	include/hpl_blas.h	391;"	d
+HPL_CALL_FBLAS	include/hpl.h	67;"	d
+HPL_COLUMN_MAJOR	include/hpl_grid.h	/^   HPL_COLUMN_MAJOR  = 202$/;"	e	enum:__anon5
+HPL_COMM_H	include/hpl_comm.h	47;"	d
+HPL_COPY_L	src/comm/HPL_1rinM.c	54;"	d	file:
+HPL_COPY_L	src/comm/HPL_1ring.c	54;"	d	file:
+HPL_COPY_L	src/comm/HPL_2rinM.c	54;"	d	file:
+HPL_COPY_L	src/comm/HPL_2ring.c	54;"	d	file:
+HPL_COPY_L	src/comm/HPL_blonM.c	54;"	d	file:
+HPL_COPY_L	src/comm/HPL_blong.c	54;"	d	file:
+HPL_COPY_L	src/panel/HPL_pdpanel_init.c	82;"	d	file:
+HPL_CPU_PTIME	include/hpl_ptimer.h	/^{  HPL_WALL_PTIME = 101, HPL_CPU_PTIME  = 102 } HPL_T_PTIME;$/;"	e	enum:__anon1
+HPL_CPU_TIME	include/hpl_timer.h	/^{  HPL_WALL_TIME = 101, HPL_CPU_TIME  = 102 } HPL_T_TIME;$/;"	e	enum:__anon3
+HPL_CROUT	include/hpl_gesv.h	/^   HPL_CROUT         = 302,                  \/* Crout lu fact variant *\/$/;"	e	enum:__anon8
+HPL_DIAG	include/hpl_blas.h	/^enum HPL_DIAG$/;"	g
+HPL_DIVFAC	include/hpl_matgen.h	65;"	d
+HPL_DOUBLE	include/hpl_grid.h	/^typedef enum { HPL_INT       = 100, HPL_DOUBLE       = 101 } HPL_T_TYPE;$/;"	e	enum:__anon4
+HPL_F2C_CHAR	include/hpl_blas.h	359;"	d
+HPL_F2C_CHAR	include/hpl_blas.h	370;"	d
+HPL_F2C_CHAR	include/hpl_blas.h	380;"	d
+HPL_F2C_CHAR	include/hpl_blas.h	390;"	d
+HPL_FAILURE	include/hpl_comm.h	74;"	d
+HPL_FALSE	include/hpl_units.h	64;"	d
+HPL_GESV_H	include/hpl_gesv.h	47;"	d
+HPL_GRID_H	include/hpl_grid.h	47;"	d
+HPL_H	include/hpl.h	47;"	d
+HPL_HALF	include/hpl_matgen.h	67;"	d
+HPL_IADD0	include/hpl_matgen.h	63;"	d
+HPL_IADD1	include/hpl_matgen.h	64;"	d
+HPL_INDXG2L_ROUT	include/hpl_units.h	67;"	d
+HPL_INDXG2P_ROUT	include/hpl_units.h	66;"	d
+HPL_INDXL2G_ROUT	include/hpl_units.h	68;"	d
+HPL_INT	include/hpl_grid.h	/^typedef enum { HPL_INT       = 100, HPL_DOUBLE       = 101 } HPL_T_TYPE;$/;"	e	enum:__anon4
+HPL_ISEED	include/hpl_ptest.h	88;"	d
+HPL_KEEP_TESTING	include/hpl_comm.h	76;"	d
+HPL_LACPY_LOG2_M_DEPTH	src/auxil/HPL_dlacpy.c	64;"	d	file:
+HPL_LACPY_LOG2_N_DEPTH	src/auxil/HPL_dlacpy.c	68;"	d	file:
+HPL_LACPY_M_DEPTH	src/auxil/HPL_dlacpy.c	63;"	d	file:
+HPL_LACPY_N_DEPTH	src/auxil/HPL_dlacpy.c	67;"	d	file:
+HPL_LASWP00N_DEPTH	src/pauxil/HPL_dlaswp00N.c	55;"	d	file:
+HPL_LASWP00N_LOG2_DEPTH	src/pauxil/HPL_dlaswp00N.c	56;"	d	file:
+HPL_LASWP01N_DEPTH	src/pauxil/HPL_dlaswp01N.c	55;"	d	file:
+HPL_LASWP01N_LOG2_DEPTH	src/pauxil/HPL_dlaswp01N.c	56;"	d	file:
+HPL_LASWP01T_DEPTH	src/pauxil/HPL_dlaswp01T.c	55;"	d	file:
+HPL_LASWP01T_LOG2_DEPTH	src/pauxil/HPL_dlaswp01T.c	56;"	d	file:
+HPL_LASWP02N_DEPTH	src/pauxil/HPL_dlaswp02N.c	55;"	d	file:
+HPL_LASWP02N_LOG2_DEPTH	src/pauxil/HPL_dlaswp02N.c	56;"	d	file:
+HPL_LASWP03N_DEPTH	src/pauxil/HPL_dlaswp03N.c	55;"	d	file:
+HPL_LASWP03N_LOG2_DEPTH	src/pauxil/HPL_dlaswp03N.c	56;"	d	file:
+HPL_LASWP03T_DEPTH	src/pauxil/HPL_dlaswp03T.c	55;"	d	file:
+HPL_LASWP03T_LOG2_DEPTH	src/pauxil/HPL_dlaswp03T.c	56;"	d	file:
+HPL_LASWP04N_DEPTH	src/pauxil/HPL_dlaswp04N.c	55;"	d	file:
+HPL_LASWP04N_LOG2_DEPTH	src/pauxil/HPL_dlaswp04N.c	56;"	d	file:
+HPL_LASWP04T_DEPTH	src/pauxil/HPL_dlaswp04T.c	55;"	d	file:
+HPL_LASWP04T_LOG2_DEPTH	src/pauxil/HPL_dlaswp04T.c	56;"	d	file:
+HPL_LASWP05N_DEPTH	src/pauxil/HPL_dlaswp05N.c	55;"	d	file:
+HPL_LASWP05N_LOG2_DEPTH	src/pauxil/HPL_dlaswp05N.c	56;"	d	file:
+HPL_LASWP05T_DEPTH	src/pauxil/HPL_dlaswp05T.c	55;"	d	file:
+HPL_LASWP05T_LOG2_DEPTH	src/pauxil/HPL_dlaswp05T.c	56;"	d	file:
+HPL_LASWP06N_DEPTH	src/pauxil/HPL_dlaswp06N.c	55;"	d	file:
+HPL_LASWP06N_LOG2_DEPTH	src/pauxil/HPL_dlaswp06N.c	56;"	d	file:
+HPL_LASWP06T_DEPTH	src/pauxil/HPL_dlaswp06T.c	55;"	d	file:
+HPL_LASWP06T_LOG2_DEPTH	src/pauxil/HPL_dlaswp06T.c	56;"	d	file:
+HPL_LASWP10N_DEPTH	src/pauxil/HPL_dlaswp10N.c	55;"	d	file:
+HPL_LASWP10N_LOG2_DEPTH	src/pauxil/HPL_dlaswp10N.c	56;"	d	file:
+HPL_LATCPY_LOG2_M_DEPTH	src/auxil/HPL_dlatcpy.c	64;"	d	file:
+HPL_LATCPY_LOG2_N_DEPTH	src/auxil/HPL_dlatcpy.c	68;"	d	file:
+HPL_LATCPY_M_DEPTH	src/auxil/HPL_dlatcpy.c	63;"	d	file:
+HPL_LATCPY_N_DEPTH	src/auxil/HPL_dlatcpy.c	67;"	d	file:
+HPL_LEFT_LOOKING	include/hpl_gesv.h	/^   HPL_LEFT_LOOKING  = 301,           \/* Left looking lu fact variant *\/$/;"	e	enum:__anon8
+HPL_LINE_MAX	include/hpl_ptest.h	86;"	d
+HPL_LOCSWP_DEPTH	src/pfact/HPL_dlocswpN.c	55;"	d	file:
+HPL_LOCSWP_DEPTH	src/pfact/HPL_dlocswpT.c	55;"	d	file:
+HPL_LOCSWP_LOG2_DEPTH	src/pfact/HPL_dlocswpN.c	56;"	d	file:
+HPL_LOCSWP_LOG2_DEPTH	src/pfact/HPL_dlocswpT.c	56;"	d	file:
+HPL_MACH_BASE	include/hpl_auxil.h	/^   HPL_MACH_BASE  = 902,                \/* base = base of the machine *\/$/;"	e	enum:__anon11
+HPL_MACH_EMAX	include/hpl_auxil.h	/^   HPL_MACH_EMAX  = 908,          \/* largest exponent before overflow *\/$/;"	e	enum:__anon11
+HPL_MACH_EMIN	include/hpl_auxil.h	/^   HPL_MACH_EMIN  = 906,   \/* min exponent before (gradual) underflow *\/$/;"	e	enum:__anon11
+HPL_MACH_EPS	include/hpl_auxil.h	/^   HPL_MACH_EPS   = 900,                \/* relative machine precision *\/$/;"	e	enum:__anon11
+HPL_MACH_MLEN	include/hpl_auxil.h	/^   HPL_MACH_MLEN  = 904,   \/* number of (base) digits in the mantissa *\/$/;"	e	enum:__anon11
+HPL_MACH_PREC	include/hpl_auxil.h	/^   HPL_MACH_PREC  = 903,                          \/* prec  = eps*base *\/$/;"	e	enum:__anon11
+HPL_MACH_RMAX	include/hpl_auxil.h	/^   HPL_MACH_RMAX  = 909  \/* overflow threshold - (base**emax)*(1-eps) *\/$/;"	e	enum:__anon11
+HPL_MACH_RMIN	include/hpl_auxil.h	/^   HPL_MACH_RMIN  = 907,        \/* underflow threshold base**(emin-1) *\/$/;"	e	enum:__anon11
+HPL_MACH_RND	include/hpl_auxil.h	/^   HPL_MACH_RND   = 905,        \/* 1.0 if rounding occurs in addition *\/$/;"	e	enum:__anon11
+HPL_MACH_SFMIN	include/hpl_auxil.h	/^   HPL_MACH_SFMIN = 901, \/* safe minimum st 1\/sfmin does not overflow *\/$/;"	e	enum:__anon11
+HPL_MATGEN_H	include/hpl_matgen.h	47;"	d
+HPL_MAXRNAME	include/hpl_units.h	61;"	d
+HPL_MAXROUT	include/hpl_units.h	60;"	d
+HPL_MAX_PARAM	include/hpl_ptest.h	87;"	d
+HPL_MISC_H	include/hpl_misc.h	47;"	d
+HPL_MULT0	include/hpl_matgen.h	61;"	d
+HPL_MULT1	include/hpl_matgen.h	62;"	d
+HPL_NORM_1	include/hpl_auxil.h	/^{ HPL_NORM_A = 800, HPL_NORM_1 = 801, HPL_NORM_I = 802 } HPL_T_NORM;$/;"	e	enum:__anon10
+HPL_NORM_A	include/hpl_auxil.h	/^{ HPL_NORM_A = 800, HPL_NORM_1 = 801, HPL_NORM_I = 802 } HPL_T_NORM;$/;"	e	enum:__anon10
+HPL_NORM_I	include/hpl_auxil.h	/^{ HPL_NORM_A = 800, HPL_NORM_1 = 801, HPL_NORM_I = 802 } HPL_T_NORM;$/;"	e	enum:__anon10
+HPL_NO_COPY_L	include/hpl.h	58;"	d
+HPL_NO_DETAILED_TIMING	include/hpl.h	62;"	d
+HPL_NO_SWP	include/hpl_pgesv.h	/^   HPL_NO_SWP        = 499$/;"	e	enum:__anon12
+HPL_NPTIMER	include/hpl_ptimer.h	59;"	d
+HPL_NTIMER	include/hpl_timer.h	59;"	d
+HPL_NUMROCI_ROUT	include/hpl_units.h	70;"	d
+HPL_NUMROC_ROUT	include/hpl_units.h	69;"	d
+HPL_ORDER	include/hpl_blas.h	/^enum HPL_ORDER$/;"	g
+HPL_PANEL_H	include/hpl_panel.h	47;"	d
+HPL_PAUXIL_H	include/hpl_pauxil.h	47;"	d
+HPL_PFACT_H	include/hpl_pfact.h	71;"	d
+HPL_PGESV_H	include/hpl_pgesv.h	71;"	d
+HPL_PMATGEN_H	include/hpl_pmatgen.h	47;"	d
+HPL_PMISC_H	include/hpl_pmisc.h	47;"	d
+HPL_POW16	include/hpl_matgen.h	66;"	d
+HPL_PTEST_H	include/hpl_ptest.h	47;"	d
+HPL_PTIMER_ERROR	include/hpl_ptimer.h	61;"	d
+HPL_PTIMER_H	include/hpl_ptimer.h	47;"	d
+HPL_PTIMER_STARTFLAG	include/hpl_ptimer.h	60;"	d
+HPL_PTR	include/hpl_misc.h	104;"	d
+HPL_RIGHT_LOOKING	include/hpl_gesv.h	/^   HPL_RIGHT_LOOKING = 303           \/* Right looking lu fact variant *\/$/;"	e	enum:__anon8
+HPL_ROW_MAJOR	include/hpl_grid.h	/^   HPL_ROW_MAJOR     = 201,$/;"	e	enum:__anon5
+HPL_SIDE	include/hpl_blas.h	/^enum HPL_SIDE$/;"	g
+HPL_SUCCESS	include/hpl_comm.h	75;"	d
+HPL_SUM_PTIME	include/hpl_ptimer.h	/^{ HPL_AMAX_PTIME  = 201, HPL_AMIN_PTIME = 202, HPL_SUM_PTIME  = 203 }$/;"	e	enum:__anon2
+HPL_SWAP00	include/hpl_pgesv.h	/^   HPL_SWAP00        = 451,                      \/* Use HPL_pdlaswp00 *\/$/;"	e	enum:__anon12
+HPL_SWAP01	include/hpl_pgesv.h	/^   HPL_SWAP01        = 452,                      \/* Use HPL_pdlaswp01 *\/$/;"	e	enum:__anon12
+HPL_SW_MIX	include/hpl_pgesv.h	/^   HPL_SW_MIX        = 453, \/* Use HPL_pdlaswp00_ for small number of *\/$/;"	e	enum:__anon12
+HPL_S_grid	include/hpl_grid.h	/^typedef struct HPL_S_grid$/;"	s
+HPL_S_palg	include/hpl_pgesv.h	/^typedef struct HPL_S_palg$/;"	s
+HPL_S_panel	include/hpl_panel.h	/^typedef struct HPL_S_panel$/;"	s
+HPL_S_pmat	include/hpl_pgesv.h	/^typedef struct HPL_S_pmat$/;"	s
+HPL_S_test	include/hpl_ptest.h	/^typedef struct HPL_S_test$/;"	s
+HPL_TEST_H	include/hpl_test.h	47;"	d
+HPL_TIMER_ERROR	include/hpl_timer.h	61;"	d
+HPL_TIMER_H	include/hpl_timer.h	47;"	d
+HPL_TIMER_STARTFLAG	include/hpl_timer.h	60;"	d
+HPL_TIMING_BEG	include/hpl_ptest.h	95;"	d
+HPL_TIMING_LASWP	include/hpl_ptest.h	101;"	d
+HPL_TIMING_MXSWP	include/hpl_ptest.h	99;"	d
+HPL_TIMING_N	include/hpl_ptest.h	96;"	d
+HPL_TIMING_PFACT	include/hpl_ptest.h	98;"	d
+HPL_TIMING_PTRSV	include/hpl_ptest.h	102;"	d
+HPL_TIMING_RPFACT	include/hpl_ptest.h	97;"	d
+HPL_TIMING_UPDATE	include/hpl_ptest.h	100;"	d
+HPL_TRANS	include/hpl_blas.h	/^enum HPL_TRANS$/;"	g
+HPL_TRUE	include/hpl_units.h	63;"	d
+HPL_T_FACT	include/hpl_gesv.h	/^} HPL_T_FACT;$/;"	t	typeref:enum:__anon8
+HPL_T_MACH	include/hpl_auxil.h	/^} HPL_T_MACH;$/;"	t	typeref:enum:__anon11
+HPL_T_NORM	include/hpl_auxil.h	/^{ HPL_NORM_A = 800, HPL_NORM_1 = 801, HPL_NORM_I = 802 } HPL_T_NORM;$/;"	t	typeref:enum:__anon10
+HPL_T_OP	include/hpl_grid.h	/^typedef void (*HPL_T_OP)$/;"	t
+HPL_T_ORDER	include/hpl_grid.h	/^} HPL_T_ORDER;$/;"	t	typeref:enum:__anon5
+HPL_T_PFA_FUN	include/hpl_pfact.h	/^typedef void (*HPL_T_PFA_FUN)$/;"	t
+HPL_T_PTIME	include/hpl_ptimer.h	/^{  HPL_WALL_PTIME = 101, HPL_CPU_PTIME  = 102 } HPL_T_PTIME;$/;"	t	typeref:enum:__anon1
+HPL_T_PTIME_OP	include/hpl_ptimer.h	/^HPL_T_PTIME_OP;$/;"	t	typeref:enum:__anon2
+HPL_T_RFA_FUN	include/hpl_pfact.h	/^typedef void (*HPL_T_RFA_FUN)$/;"	t
+HPL_T_SWAP	include/hpl_pgesv.h	/^} HPL_T_SWAP;$/;"	t	typeref:enum:__anon12
+HPL_T_TIME	include/hpl_timer.h	/^{  HPL_WALL_TIME = 101, HPL_CPU_TIME  = 102 } HPL_T_TIME;$/;"	t	typeref:enum:__anon3
+HPL_T_TOP	include/hpl_comm.h	/^} HPL_T_TOP;$/;"	t	typeref:enum:__anon9
+HPL_T_TYPE	include/hpl_grid.h	/^typedef enum { HPL_INT       = 100, HPL_DOUBLE       = 101 } HPL_T_TYPE;$/;"	t	typeref:enum:__anon4
+HPL_T_UPD_FUN	include/hpl_pfact.h	/^typedef void (*HPL_T_UPD_FUN)$/;"	t
+HPL_T_UPD_FUN2	include/hpl_pfact.h	/^typedef void (*HPL_T_UPD_FUN2)$/;"	t
+HPL_T_grid	include/hpl_grid.h	/^} HPL_T_grid;$/;"	t	typeref:struct:HPL_S_grid
+HPL_T_palg	include/hpl_pgesv.h	/^} HPL_T_palg;$/;"	t	typeref:struct:HPL_S_palg
+HPL_T_panel	include/hpl_panel.h	/^} HPL_T_panel;$/;"	t	typeref:struct:HPL_S_panel
+HPL_T_pmat	include/hpl_pgesv.h	/^} HPL_T_pmat;$/;"	t	typeref:struct:HPL_S_pmat
+HPL_T_test	include/hpl_ptest.h	/^} HPL_T_test;$/;"	t	typeref:struct:HPL_S_test
+HPL_UNITS_H	include/hpl_units.h	47;"	d
+HPL_UPLO	include/hpl_blas.h	/^enum HPL_UPLO$/;"	g
+HPL_USE_F77_INTEGER_DEF	include/hpl_blas.h	200;"	d
+HPL_USE_MPI_DATATYPE	include/hpl.h	54;"	d
+HPL_USE_MPI_DATATYPE	src/comm/HPL_recv.c	56;"	d	file:
+HPL_USE_MPI_DATATYPE	src/comm/HPL_sdrv.c	56;"	d	file:
+HPL_USE_MPI_DATATYPE	src/comm/HPL_send.c	56;"	d	file:
+HPL_WALL_PTIME	include/hpl_ptimer.h	/^{  HPL_WALL_PTIME = 101, HPL_CPU_PTIME  = 102 } HPL_T_PTIME;$/;"	e	enum:__anon1
+HPL_WALL_TIME	include/hpl_timer.h	/^{  HPL_WALL_TIME = 101, HPL_CPU_TIME  = 102 } HPL_T_TIME;$/;"	e	enum:__anon3
+HPL_abort	src/auxil/HPL_abort.c	/^void HPL_abort$/;"	f
+HPL_all_reduce	src/grid/HPL_all_reduce.c	/^int HPL_all_reduce$/;"	f
+HPL_au0obj	src/auxil/CUDA/Makefile	/^HPL_au0obj       = \\$/;"	m
+HPL_au1obj	src/auxil/CUDA/Makefile	/^HPL_au1obj       = \\$/;"	m
+HPL_auxobj	src/auxil/CUDA/Makefile	/^HPL_auxobj       = \\$/;"	m
+HPL_barrier	src/grid/HPL_barrier.c	/^int HPL_barrier$/;"	f
+HPL_bcast	src/comm/HPL_bcast.c	/^int HPL_bcast$/;"	f
+HPL_bcast_1rinM	src/comm/HPL_1rinM.c	/^int HPL_bcast_1rinM$/;"	f
+HPL_bcast_1ring	src/comm/HPL_1ring.c	/^int HPL_bcast_1ring$/;"	f
+HPL_bcast_2rinM	src/comm/HPL_2rinM.c	/^int HPL_bcast_2rinM$/;"	f
+HPL_bcast_2ring	src/comm/HPL_2ring.c	/^int HPL_bcast_2ring$/;"	f
+HPL_bcast_blonM	src/comm/HPL_blonM.c	/^int HPL_bcast_blonM$/;"	f
+HPL_bcast_blong	src/comm/HPL_blong.c	/^int HPL_bcast_blong$/;"	f
+HPL_binit	src/comm/HPL_binit.c	/^int HPL_binit$/;"	f
+HPL_binit_1rinM	src/comm/HPL_1rinM.c	/^int HPL_binit_1rinM$/;"	f
+HPL_binit_1ring	src/comm/HPL_1ring.c	/^int HPL_binit_1ring$/;"	f
+HPL_binit_2rinM	src/comm/HPL_2rinM.c	/^int HPL_binit_2rinM$/;"	f
+HPL_binit_2ring	src/comm/HPL_2ring.c	/^int HPL_binit_2ring$/;"	f
+HPL_binit_blonM	src/comm/HPL_blonM.c	/^int HPL_binit_blonM$/;"	f
+HPL_binit_blong	src/comm/HPL_blong.c	/^int HPL_binit_blong$/;"	f
+HPL_blaobj	src/blas/CUDA/Makefile	/^HPL_blaobj       = \\$/;"	m
+HPL_broadcast	src/grid/HPL_broadcast.c	/^int HPL_broadcast$/;"	f
+HPL_bwait	src/comm/HPL_bwait.c	/^int HPL_bwait$/;"	f
+HPL_bwait_1rinM	src/comm/HPL_1rinM.c	/^int HPL_bwait_1rinM$/;"	f
+HPL_bwait_1ring	src/comm/HPL_1ring.c	/^int HPL_bwait_1ring$/;"	f
+HPL_bwait_2rinM	src/comm/HPL_2rinM.c	/^int HPL_bwait_2rinM$/;"	f
+HPL_bwait_2ring	src/comm/HPL_2ring.c	/^int HPL_bwait_2ring$/;"	f
+HPL_bwait_blonM	src/comm/HPL_blonM.c	/^int HPL_bwait_blonM$/;"	f
+HPL_bwait_blong	src/comm/HPL_blong.c	/^int HPL_bwait_blong$/;"	f
+HPL_comobj	src/comm/CUDA/Makefile	/^HPL_comobj       = \\$/;"	m
+HPL_copyL	src/comm/HPL_copyL.c	/^void HPL_copyL$/;"	f
+HPL_daxpy	include/hpl_blas.h	164;"	d
+HPL_daxpy	src/blas/HPL_daxpy.c	/^void HPL_daxpy$/;"	f
+HPL_dcopy	include/hpl_blas.h	163;"	d
+HPL_dcopy	src/blas/HPL_dcopy.c	/^void HPL_dcopy$/;"	f
+HPL_dgemm	include/hpl_blas.h	172;"	d
+HPL_dgemm	src/blas/HPL_dgemm.c	/^void HPL_dgemm$/;"	f
+HPL_dgemm0	src/blas/HPL_dgemm.c	/^static void HPL_dgemm0$/;"	f	file:
+HPL_dgemmNN	src/blas/HPL_dgemm.c	/^static void HPL_dgemmNN$/;"	f	file:
+HPL_dgemmNT	src/blas/HPL_dgemm.c	/^static void HPL_dgemmNT$/;"	f	file:
+HPL_dgemmTN	src/blas/HPL_dgemm.c	/^static void HPL_dgemmTN$/;"	f	file:
+HPL_dgemmTT	src/blas/HPL_dgemm.c	/^static void HPL_dgemmTT$/;"	f	file:
+HPL_dgemv	include/hpl_blas.h	168;"	d
+HPL_dgemv	src/blas/HPL_dgemv.c	/^void HPL_dgemv$/;"	f
+HPL_dgemv0	src/blas/HPL_dgemv.c	/^static void HPL_dgemv0$/;"	f	file:
+HPL_dger	include/hpl_blas.h	170;"	d
+HPL_dger	src/blas/HPL_dger.c	/^void HPL_dger$/;"	f
+HPL_dipow	src/auxil/HPL_dlamch.c	/^static double HPL_dipow$/;"	f	file:
+HPL_dlacpy	src/auxil/HPL_dlacpy.c	/^void HPL_dlacpy$/;"	f
+HPL_dlamc1	src/auxil/HPL_dlamch.c	/^static void HPL_dlamc1$/;"	f	file:
+HPL_dlamc2	src/auxil/HPL_dlamch.c	/^static void HPL_dlamc2$/;"	f	file:
+HPL_dlamc3	src/auxil/HPL_dlamch.c	/^static double HPL_dlamc3( const double A, const double B )$/;"	f	file:
+HPL_dlamc4	src/auxil/HPL_dlamch.c	/^static void HPL_dlamc4$/;"	f	file:
+HPL_dlamc5	src/auxil/HPL_dlamch.c	/^static void HPL_dlamc5$/;"	f	file:
+HPL_dlamch	src/auxil/HPL_dlamch.c	/^double HPL_dlamch$/;"	f
+HPL_dlange	src/auxil/HPL_dlange.c	/^double HPL_dlange$/;"	f
+HPL_dlaprnt	src/auxil/HPL_dlaprnt.c	/^void HPL_dlaprnt$/;"	f
+HPL_dlaswp00N	src/pauxil/HPL_dlaswp00N.c	/^void HPL_dlaswp00N$/;"	f
+HPL_dlaswp01N	src/pauxil/HPL_dlaswp01N.c	/^void HPL_dlaswp01N$/;"	f
+HPL_dlaswp01T	src/pauxil/HPL_dlaswp01T.c	/^void HPL_dlaswp01T$/;"	f
+HPL_dlaswp02N	src/pauxil/HPL_dlaswp02N.c	/^void HPL_dlaswp02N$/;"	f
+HPL_dlaswp03N	src/pauxil/HPL_dlaswp03N.c	/^void HPL_dlaswp03N$/;"	f
+HPL_dlaswp03T	src/pauxil/HPL_dlaswp03T.c	/^void HPL_dlaswp03T$/;"	f
+HPL_dlaswp04N	src/pauxil/HPL_dlaswp04N.c	/^void HPL_dlaswp04N$/;"	f
+HPL_dlaswp04T	src/pauxil/HPL_dlaswp04T.c	/^void HPL_dlaswp04T$/;"	f
+HPL_dlaswp05N	src/pauxil/HPL_dlaswp05N.c	/^void HPL_dlaswp05N$/;"	f
+HPL_dlaswp05T	src/pauxil/HPL_dlaswp05T.c	/^void HPL_dlaswp05T$/;"	f
+HPL_dlaswp06N	src/pauxil/HPL_dlaswp06N.c	/^void HPL_dlaswp06N$/;"	f
+HPL_dlaswp06T	src/pauxil/HPL_dlaswp06T.c	/^void HPL_dlaswp06T$/;"	f
+HPL_dlaswp10N	src/pauxil/HPL_dlaswp10N.c	/^void HPL_dlaswp10N$/;"	f
+HPL_dlatcpy	src/auxil/HPL_dlatcpy.c	/^void HPL_dlatcpy$/;"	f
+HPL_dlocmax	src/pfact/HPL_dlocmax.c	/^void HPL_dlocmax$/;"	f
+HPL_dlocswpN	src/pfact/HPL_dlocswpN.c	/^void HPL_dlocswpN$/;"	f
+HPL_dlocswpT	src/pfact/HPL_dlocswpT.c	/^void HPL_dlocswpT$/;"	f
+HPL_dmatgen	testing/matgen/HPL_dmatgen.c	/^void HPL_dmatgen$/;"	f
+HPL_dscal	include/hpl_blas.h	165;"	d
+HPL_dscal	src/blas/HPL_dscal.c	/^void HPL_dscal$/;"	f
+HPL_dswap	include/hpl_blas.h	162;"	d
+HPL_dswap	src/blas/HPL_dswap.c	/^void HPL_dswap$/;"	f
+HPL_dtrsm	include/hpl_blas.h	173;"	d
+HPL_dtrsm	src/blas/HPL_dtrsm.c	/^void HPL_dtrsm$/;"	f
+HPL_dtrsm0	src/blas/HPL_dtrsm.c	/^static void HPL_dtrsm0$/;"	f	file:
+HPL_dtrsmLLNN	src/blas/HPL_dtrsm.c	/^static void HPL_dtrsmLLNN$/;"	f	file:
+HPL_dtrsmLLNU	src/blas/HPL_dtrsm.c	/^static void HPL_dtrsmLLNU$/;"	f	file:
+HPL_dtrsmLLTN	src/blas/HPL_dtrsm.c	/^static void HPL_dtrsmLLTN$/;"	f	file:
+HPL_dtrsmLLTU	src/blas/HPL_dtrsm.c	/^static void HPL_dtrsmLLTU$/;"	f	file:
+HPL_dtrsmLUNN	src/blas/HPL_dtrsm.c	/^static void HPL_dtrsmLUNN$/;"	f	file:
+HPL_dtrsmLUNU	src/blas/HPL_dtrsm.c	/^static void HPL_dtrsmLUNU$/;"	f	file:
+HPL_dtrsmLUTN	src/blas/HPL_dtrsm.c	/^static void HPL_dtrsmLUTN$/;"	f	file:
+HPL_dtrsmLUTU	src/blas/HPL_dtrsm.c	/^static void HPL_dtrsmLUTU$/;"	f	file:
+HPL_dtrsmRLNN	src/blas/HPL_dtrsm.c	/^static void HPL_dtrsmRLNN$/;"	f	file:
+HPL_dtrsmRLNU	src/blas/HPL_dtrsm.c	/^static void HPL_dtrsmRLNU$/;"	f	file:
+HPL_dtrsmRLTN	src/blas/HPL_dtrsm.c	/^static void HPL_dtrsmRLTN$/;"	f	file:
+HPL_dtrsmRLTU	src/blas/HPL_dtrsm.c	/^static void HPL_dtrsmRLTU$/;"	f	file:
+HPL_dtrsmRUNN	src/blas/HPL_dtrsm.c	/^static void HPL_dtrsmRUNN$/;"	f	file:
+HPL_dtrsmRUNU	src/blas/HPL_dtrsm.c	/^static void HPL_dtrsmRUNU$/;"	f	file:
+HPL_dtrsmRUTN	src/blas/HPL_dtrsm.c	/^static void HPL_dtrsmRUTN$/;"	f	file:
+HPL_dtrsmRUTU	src/blas/HPL_dtrsm.c	/^static void HPL_dtrsmRUTU$/;"	f	file:
+HPL_dtrsv	include/hpl_blas.h	169;"	d
+HPL_dtrsv	src/blas/HPL_dtrsv.c	/^void HPL_dtrsv$/;"	f
+HPL_dtrsv0	src/blas/HPL_dtrsv.c	/^static void HPL_dtrsv0$/;"	f	file:
+HPL_dtrsvLNN	src/blas/HPL_dtrsv.c	/^static void HPL_dtrsvLNN$/;"	f	file:
+HPL_dtrsvLNU	src/blas/HPL_dtrsv.c	/^static void HPL_dtrsvLNU$/;"	f	file:
+HPL_dtrsvLTN	src/blas/HPL_dtrsv.c	/^static void HPL_dtrsvLTN$/;"	f	file:
+HPL_dtrsvLTU	src/blas/HPL_dtrsv.c	/^static void HPL_dtrsvLTU$/;"	f	file:
+HPL_dtrsvUNN	src/blas/HPL_dtrsv.c	/^static void HPL_dtrsvUNN$/;"	f	file:
+HPL_dtrsvUNU	src/blas/HPL_dtrsv.c	/^static void HPL_dtrsvUNU$/;"	f	file:
+HPL_dtrsvUTN	src/blas/HPL_dtrsv.c	/^static void HPL_dtrsvUTN$/;"	f	file:
+HPL_dtrsvUTU	src/blas/HPL_dtrsv.c	/^static void HPL_dtrsvUTU$/;"	f	file:
+HPL_equil	src/pgesv/HPL_equil.c	/^void HPL_equil$/;"	f
+HPL_fprintf	src/auxil/HPL_fprintf.c	/^void HPL_fprintf$/;"	f
+HPL_grid_exit	src/grid/HPL_grid_exit.c	/^int HPL_grid_exit$/;"	f
+HPL_grid_info	src/grid/HPL_grid_info.c	/^int HPL_grid_info$/;"	f
+HPL_grid_init	src/grid/HPL_grid_init.c	/^int HPL_grid_init$/;"	f
+HPL_griobj	src/grid/CUDA/Makefile	/^HPL_griobj       = \\$/;"	m
+HPL_idamax	include/hpl_blas.h	166;"	d
+HPL_idamax	src/blas/HPL_idamax.c	/^int HPL_idamax$/;"	f
+HPL_indxg2l	src/pauxil/HPL_indxg2l.c	/^int HPL_indxg2l$/;"	f
+HPL_indxg2lp	src/pauxil/HPL_indxg2lp.c	/^void HPL_indxg2lp$/;"	f
+HPL_indxg2p	src/pauxil/HPL_indxg2p.c	/^int HPL_indxg2p$/;"	f
+HPL_indxl2g	src/pauxil/HPL_indxl2g.c	/^int HPL_indxl2g$/;"	f
+HPL_infog2l	src/pauxil/HPL_infog2l.c	/^void HPL_infog2l$/;"	f
+HPL_jumpit	testing/matgen/HPL_jumpit.c	/^void HPL_jumpit$/;"	f
+HPL_ladd	testing/matgen/HPL_ladd.c	/^void HPL_ladd$/;"	f
+HPL_lmul	testing/matgen/HPL_lmul.c	/^void HPL_lmul$/;"	f
+HPL_logsort	src/pgesv/HPL_logsort.c	/^void HPL_logsort$/;"	f
+HPL_matobj	testing/matgen/CUDA/Makefile	/^HPL_matobj       = \\$/;"	m
+HPL_max	src/grid/HPL_max.c	/^void HPL_max$/;"	f
+HPL_min	src/grid/HPL_min.c	/^void HPL_min$/;"	f
+HPL_numroc	src/pauxil/HPL_numroc.c	/^int HPL_numroc$/;"	f
+HPL_numrocI	src/pauxil/HPL_numrocI.c	/^int HPL_numrocI$/;"	f
+HPL_pabort	src/pauxil/HPL_pabort.c	/^void HPL_pabort$/;"	f
+HPL_packL	src/comm/HPL_packL.c	/^int HPL_packL$/;"	f
+HPL_panobj	src/panel/CUDA/Makefile	/^HPL_panobj       = \\$/;"	m
+HPL_pauobj	src/pauxil/CUDA/Makefile	/^HPL_pauobj       = \\$/;"	m
+HPL_pdfact	src/pfact/HPL_pdfact.c	/^void HPL_pdfact$/;"	f
+HPL_pdgesv	src/pgesv/HPL_pdgesv.c	/^void HPL_pdgesv$/;"	f
+HPL_pdgesv0	src/pgesv/HPL_pdgesv0.c	/^void HPL_pdgesv0$/;"	f
+HPL_pdgesvK1	src/pgesv/HPL_pdgesvK1.c	/^void HPL_pdgesvK1$/;"	f
+HPL_pdgesvK2	src/pgesv/HPL_pdgesvK2.c	/^void HPL_pdgesvK2$/;"	f
+HPL_pdinfo	testing/ptest/HPL_pdinfo.c	/^void HPL_pdinfo$/;"	f
+HPL_pdlamch	src/pauxil/HPL_pdlamch.c	/^double HPL_pdlamch$/;"	f
+HPL_pdlange	src/pauxil/HPL_pdlange.c	/^double HPL_pdlange$/;"	f
+HPL_pdlaprnt	src/pauxil/HPL_pdlaprnt.c	/^void HPL_pdlaprnt$/;"	f
+HPL_pdlaswp00N	src/pgesv/HPL_pdlaswp00N.c	/^void HPL_pdlaswp00N$/;"	f
+HPL_pdlaswp00T	src/pgesv/HPL_pdlaswp00T.c	/^void HPL_pdlaswp00T$/;"	f
+HPL_pdlaswp01N	src/pgesv/HPL_pdlaswp01N.c	/^void HPL_pdlaswp01N$/;"	f
+HPL_pdlaswp01T	src/pgesv/HPL_pdlaswp01T.c	/^void HPL_pdlaswp01T$/;"	f
+HPL_pdmatgen	testing/pmatgen/HPL_pdmatgen.c	/^void HPL_pdmatgen$/;"	f
+HPL_pdmxswp	src/pfact/HPL_pdmxswp.c	/^void HPL_pdmxswp$/;"	f
+HPL_pdpancrN	src/pfact/HPL_pdpancrN.c	/^void HPL_pdpancrN$/;"	f
+HPL_pdpancrT	src/pfact/HPL_pdpancrT.c	/^void HPL_pdpancrT$/;"	f
+HPL_pdpanel_disp	src/panel/HPL_pdpanel_disp.c	/^int HPL_pdpanel_disp$/;"	f
+HPL_pdpanel_free	src/panel/HPL_pdpanel_free.c	/^int HPL_pdpanel_free$/;"	f
+HPL_pdpanel_init	src/panel/HPL_pdpanel_init.c	/^void HPL_pdpanel_init$/;"	f
+HPL_pdpanel_new	src/panel/HPL_pdpanel_new.c	/^void HPL_pdpanel_new$/;"	f
+HPL_pdpanllN	src/pfact/HPL_pdpanllN.c	/^void HPL_pdpanllN$/;"	f
+HPL_pdpanllT	src/pfact/HPL_pdpanllT.c	/^void HPL_pdpanllT$/;"	f
+HPL_pdpanrlN	src/pfact/HPL_pdpanrlN.c	/^void HPL_pdpanrlN$/;"	f
+HPL_pdpanrlT	src/pfact/HPL_pdpanrlT.c	/^void HPL_pdpanrlT$/;"	f
+HPL_pdrpancrN	src/pfact/HPL_pdrpancrN.c	/^void HPL_pdrpancrN$/;"	f
+HPL_pdrpancrT	src/pfact/HPL_pdrpancrT.c	/^void HPL_pdrpancrT$/;"	f
+HPL_pdrpanllN	src/pfact/HPL_pdrpanllN.c	/^void HPL_pdrpanllN$/;"	f
+HPL_pdrpanllT	src/pfact/HPL_pdrpanllT.c	/^void HPL_pdrpanllT$/;"	f
+HPL_pdrpanrlN	src/pfact/HPL_pdrpanrlN.c	/^void HPL_pdrpanrlN$/;"	f
+HPL_pdrpanrlT	src/pfact/HPL_pdrpanrlT.c	/^void HPL_pdrpanrlT$/;"	f
+HPL_pdtest	testing/ptest/HPL_pdtest.c	/^void HPL_pdtest$/;"	f
+HPL_pdtrsv	src/pgesv/HPL_pdtrsv.c	/^void HPL_pdtrsv$/;"	f
+HPL_pdupdateNN	src/pgesv/HPL_pdupdateNN.c	/^void HPL_pdupdateNN$/;"	f
+HPL_pdupdateNN_swap	src/pgesv/HPL_pdupdateNN.c	/^void HPL_pdupdateNN_swap$/;"	f
+HPL_pdupdateNN_trsm_gemm	src/pgesv/HPL_pdupdateNN.c	/^void HPL_pdupdateNN_trsm_gemm$/;"	f
+HPL_pdupdateNT	src/pgesv/HPL_pdupdateNT.c	/^void HPL_pdupdateNT$/;"	f
+HPL_pdupdateNT_swap	src/pgesv/HPL_pdupdateNT.c	/^void HPL_pdupdateNT_swap$/;"	f
+HPL_pdupdateNT_trsm_gemm	src/pgesv/HPL_pdupdateNT.c	/^void HPL_pdupdateNT_trsm_gemm$/;"	f
+HPL_pdupdateTN	src/pgesv/HPL_pdupdateTN.c	/^void HPL_pdupdateTN$/;"	f
+HPL_pdupdateTT	src/pgesv/HPL_pdupdateTT.c	/^void HPL_pdupdateTT$/;"	f
+HPL_pdupdate_swap	src/pgesv/HPL_pdgesvK2.c	/^HPL_T_UPD_FUN2     HPL_pdupdate_swap;$/;"	v
+HPL_pdupdate_trsm_gemm	src/pgesv/HPL_pdgesvK2.c	/^HPL_T_UPD_FUN2     HPL_pdupdate_trsm_gemm;$/;"	v
+HPL_perm	src/pgesv/HPL_perm.c	/^void HPL_perm$/;"	f
+HPL_pfaobj	src/pfact/CUDA/Makefile	/^HPL_pfaobj       = \\$/;"	m
+HPL_pgeobj	src/pgesv/CUDA/Makefile	/^HPL_pgeobj       = \\$/;"	m
+HPL_pipid	src/pgesv/HPL_pipid.c	/^void HPL_pipid$/;"	f
+HPL_plindx0	src/pgesv/HPL_plindx0.c	/^void HPL_plindx0$/;"	f
+HPL_plindx1	src/pgesv/HPL_plindx1.c	/^void HPL_plindx1$/;"	f
+HPL_plindx10	src/pgesv/HPL_plindx10.c	/^void HPL_plindx10$/;"	f
+HPL_pmaobj	testing/pmatgen/CUDA/Makefile	/^HPL_pmaobj       = \\$/;"	m
+HPL_pnum	src/grid/HPL_pnum.c	/^int HPL_pnum$/;"	f
+HPL_pteobj	testing/ptest/CUDA/Makefile	/^HPL_pteobj       = \\$/;"	m
+HPL_ptimer	testing/ptimer/HPL_ptimer.c	/^void HPL_ptimer( const int I )$/;"	f
+HPL_ptimer_boot	testing/ptimer/HPL_ptimer.c	/^void HPL_ptimer_boot( void )$/;"	f
+HPL_ptimer_combine	testing/ptimer/HPL_ptimer.c	/^void HPL_ptimer_combine$/;"	f
+HPL_ptimer_cpusec	testing/ptimer/HPL_ptimer.c	/^static double      HPL_ptimer_cpusec   [HPL_NPTIMER],$/;"	v	file:
+HPL_ptimer_cpustart	testing/ptimer/HPL_ptimer.c	/^                   HPL_ptimer_cpustart [HPL_NPTIMER],$/;"	v	file:
+HPL_ptimer_cputime	testing/ptimer/HPL_ptimer_cputime.c	/^double HPL_ptimer_cputime( void )$/;"	f
+HPL_ptimer_disable	testing/ptimer/HPL_ptimer.c	/^void HPL_ptimer_disable( void )$/;"	f
+HPL_ptimer_disabled	testing/ptimer/HPL_ptimer.c	/^static int         HPL_ptimer_disabled;$/;"	v	file:
+HPL_ptimer_enable	testing/ptimer/HPL_ptimer.c	/^void HPL_ptimer_enable( void )$/;"	f
+HPL_ptimer_inquire	testing/ptimer/HPL_ptimer.c	/^double HPL_ptimer_inquire$/;"	f
+HPL_ptimer_wallsec	testing/ptimer/HPL_ptimer.c	/^                   HPL_ptimer_wallsec  [HPL_NPTIMER],$/;"	v	file:
+HPL_ptimer_wallstart	testing/ptimer/HPL_ptimer.c	/^                   HPL_ptimer_wallstart[HPL_NPTIMER];$/;"	v	file:
+HPL_ptimer_walltime	testing/ptimer/HPL_ptimer_walltime.c	/^double HPL_ptimer_walltime( void )$/;"	f
+HPL_ptiobj	testing/ptimer/CUDA/Makefile	/^HPL_ptiobj       = \\$/;"	m
+HPL_pwarn	src/pauxil/HPL_pwarn.c	/^void HPL_pwarn$/;"	f
+HPL_rand	testing/matgen/HPL_rand.c	/^double HPL_rand( void )$/;"	f
+HPL_recv	src/comm/HPL_recv.c	/^int HPL_recv$/;"	f
+HPL_reduce	src/grid/HPL_reduce.c	/^int HPL_reduce$/;"	f
+HPL_rollN	src/pgesv/HPL_rollN.c	/^void HPL_rollN$/;"	f
+HPL_rollT	src/pgesv/HPL_rollT.c	/^void HPL_rollT$/;"	f
+HPL_rone	include/hpl_misc.h	77;"	d
+HPL_rtwo	include/hpl_misc.h	78;"	d
+HPL_rzero	include/hpl_misc.h	79;"	d
+HPL_sdrv	src/comm/HPL_sdrv.c	/^int HPL_sdrv$/;"	f
+HPL_send	src/comm/HPL_send.c	/^int HPL_send$/;"	f
+HPL_setran	testing/matgen/HPL_setran.c	/^void HPL_setran$/;"	f
+HPL_spreadN	src/pgesv/HPL_spreadN.c	/^void HPL_spreadN$/;"	f
+HPL_spreadT	src/pgesv/HPL_spreadT.c	/^void HPL_spreadT$/;"	f
+HPL_sum	src/grid/HPL_sum.c	/^void HPL_sum$/;"	f
+HPL_timer	testing/timer/HPL_timer.c	/^void HPL_timer( const int I )$/;"	f
+HPL_timer_boot	testing/timer/HPL_timer.c	/^void HPL_timer_boot( void )$/;"	f
+HPL_timer_cpusec	testing/timer/HPL_timer.c	/^static double                 HPL_timer_cpusec   [HPL_NTIMER],$/;"	v	file:
+HPL_timer_cpustart	testing/timer/HPL_timer.c	/^                              HPL_timer_cpustart [HPL_NTIMER],$/;"	v	file:
+HPL_timer_cputime	testing/timer/HPL_timer_cputime.c	/^double HPL_timer_cputime( void )$/;"	f
+HPL_timer_disable	testing/timer/HPL_timer.c	/^void HPL_timer_disable( void )$/;"	f
+HPL_timer_disabled	testing/timer/HPL_timer.c	/^static int                    HPL_timer_disabled;$/;"	v	file:
+HPL_timer_enable	testing/timer/HPL_timer.c	/^void HPL_timer_enable( void )$/;"	f
+HPL_timer_inquire	testing/timer/HPL_timer.c	/^double HPL_timer_inquire$/;"	f
+HPL_timer_wallsec	testing/timer/HPL_timer.c	/^                              HPL_timer_wallsec  [HPL_NTIMER],$/;"	v	file:
+HPL_timer_wallstart	testing/timer/HPL_timer.c	/^                              HPL_timer_wallstart[HPL_NTIMER];$/;"	v	file:
+HPL_timer_walltime	testing/timer/HPL_timer_walltime.c	/^double HPL_timer_walltime( void )$/;"	f
+HPL_timobj	testing/timer/CUDA/Makefile	/^HPL_timobj       = \\$/;"	m
+HPL_warn	src/auxil/HPL_warn.c	/^void HPL_warn$/;"	f
+HPL_xjumpm	testing/matgen/HPL_xjumpm.c	/^void HPL_xjumpm$/;"	f
+HplColumnMajor	include/hpl_blas.h	/^{  HplRowMajor = 101,  HplColumnMajor  = 102 };$/;"	e	enum:HPL_ORDER
+HplConjTrans	include/hpl_blas.h	/^{  HplNoTrans  = 111,  HplTrans        = 112,  HplConjTrans    = 113 };$/;"	e	enum:HPL_TRANS
+HplLeft	include/hpl_blas.h	/^{  HplLeft     = 141,  HplRight        = 142 }; $/;"	e	enum:HPL_SIDE
+HplLower	include/hpl_blas.h	/^{  HplUpper    = 121,  HplLower        = 122 };$/;"	e	enum:HPL_UPLO
+HplNoTrans	include/hpl_blas.h	/^{  HplNoTrans  = 111,  HplTrans        = 112,  HplConjTrans    = 113 };$/;"	e	enum:HPL_TRANS
+HplNonUnit	include/hpl_blas.h	/^{  HplNonUnit  = 131,  HplUnit         = 132 };$/;"	e	enum:HPL_DIAG
+HplRight	include/hpl_blas.h	/^{  HplLeft     = 141,  HplRight        = 142 }; $/;"	e	enum:HPL_SIDE
+HplRowMajor	include/hpl_blas.h	/^{  HplRowMajor = 101,  HplColumnMajor  = 102 };$/;"	e	enum:HPL_ORDER
+HplTrans	include/hpl_blas.h	/^{  HplNoTrans  = 111,  HplTrans        = 112,  HplConjTrans    = 113 };$/;"	e	enum:HPL_TRANS
+HplUnit	include/hpl_blas.h	/^{  HplNonUnit  = 131,  HplUnit         = 132 };$/;"	e	enum:HPL_DIAG
+HplUpper	include/hpl_blas.h	/^{  HplUpper    = 121,  HplLower        = 122 };$/;"	e	enum:HPL_UPLO
+I550p3000	www/results.html	/^<H3><A NAME="I550p3000">8 Duals Intel PIII 550 Mhz (512 Mb) - Myrinet<\/A><\/H3>$/;"	a
+INCdep	src/auxil/CUDA/Makefile	/^INCdep           = \\$/;"	m
+INCdep	src/blas/CUDA/Makefile	/^INCdep           = \\$/;"	m
+INCdep	src/comm/CUDA/Makefile	/^INCdep           = \\$/;"	m
+INCdep	src/grid/CUDA/Makefile	/^INCdep           = \\$/;"	m
+INCdep	src/panel/CUDA/Makefile	/^INCdep           = \\$/;"	m
+INCdep	src/pauxil/CUDA/Makefile	/^INCdep           = \\$/;"	m
+INCdep	src/pfact/CUDA/Makefile	/^INCdep           = \\$/;"	m
+INCdep	src/pgesv/CUDA/Makefile	/^INCdep           = \\$/;"	m
+INCdep	testing/matgen/CUDA/Makefile	/^INCdep           = \\$/;"	m
+INCdep	testing/pmatgen/CUDA/Makefile	/^INCdep           = \\$/;"	m
+INCdep	testing/ptest/CUDA/Makefile	/^INCdep           = \\$/;"	m
+INCdep	testing/ptimer/CUDA/Makefile	/^INCdep           = \\$/;"	m
+INCdep	testing/timer/CUDA/Makefile	/^INCdep           = \\$/;"	m
+IWORK	include/hpl_panel.h	/^   int                 * IWORK;     \/* integer workspace for swapping *\/$/;"	m	struct:HPL_S_panel
+I_RECV	src/comm/HPL_blonM.c	59;"	d	file:
+I_RECV	src/comm/HPL_blong.c	59;"	d	file:
+I_RECV	src/pgesv/HPL_rollN.c	53;"	d	file:
+I_RECV	src/pgesv/HPL_rollT.c	53;"	d	file:
+I_SEND	src/comm/HPL_blonM.c	58;"	d	file:
+I_SEND	src/comm/HPL_blong.c	58;"	d	file:
+I_SEND	src/pgesv/HPL_rollN.c	52;"	d	file:
+I_SEND	src/pgesv/HPL_rollT.c	52;"	d	file:
+L1	include/hpl_panel.h	/^   double              * L1;       \/* ptr to jb x jb upper block of A *\/$/;"	m	struct:HPL_S_panel
+L1block	include/hpl_panel.h	/^   vsip_block_d        * L1block;                         \/* L1 block *\/$/;"	m	struct:HPL_S_panel
+L2	include/hpl_panel.h	/^   double              * L2;                              \/* ptr to L *\/$/;"	m	struct:HPL_S_panel
+L2block	include/hpl_panel.h	/^   vsip_block_d        * L2block;                         \/* L2 block *\/$/;"	m	struct:HPL_S_panel
+LDU	src/pgesv/HPL_pdlaswp00N.c	127;"	d	file:
+LDU	src/pgesv/HPL_pdlaswp00T.c	127;"	d	file:
+LDU	src/pgesv/HPL_pdlaswp01N.c	124;"	d	file:
+LDU	src/pgesv/HPL_pdlaswp01T.c	124;"	d	file:
+LDU	src/pgesv/HPL_pdupdateNN.c	136;"	d	file:
+LDU	src/pgesv/HPL_pdupdateNN.c	490;"	d	file:
+LDU	src/pgesv/HPL_pdupdateNN.c	602;"	d	file:
+LDU	src/pgesv/HPL_pdupdateNT.c	136;"	d	file:
+LDU	src/pgesv/HPL_pdupdateNT.c	491;"	d	file:
+LDU	src/pgesv/HPL_pdupdateNT.c	604;"	d	file:
+LDU	src/pgesv/HPL_pdupdateTN.c	112;"	d	file:
+LDU	src/pgesv/HPL_pdupdateTT.c	112;"	d	file:
+Linpack_Benchmark	www/references.html	/^<H3><A NAME="Linpack_Benchmark">Linpack Benchmark<\/A><\/H3>$/;"	a
+MAX_STREAMS	src/cuda/fermi_dgemm.c	116;"	d	file:
+MAX_TRANSPOSE	src/cuda/fermi_dgemm.c	124;"	d	file:
+MModAdd	include/hpl_grid.h	115;"	d
+MModAdd1	include/hpl_grid.h	118;"	d
+MModDec	include/hpl_grid.h	111;"	d
+MModInc	include/hpl_grid.h	109;"	d
+MModSub	include/hpl_grid.h	120;"	d
+MModSub1	include/hpl_grid.h	123;"	d
+MNxtMgid	include/hpl_pgesv.h	155;"	d
+MPosMod	include/hpl_grid.h	113;"	d
+MSGID_BEGIN_COLL	include/hpl_pgesv.h	148;"	d
+MSGID_BEGIN_FACT	include/hpl_pgesv.h	143;"	d
+MSGID_BEGIN_PFACT	include/hpl_pgesv.h	141;"	d
+MSGID_BEGIN_PTRSV	include/hpl_pgesv.h	145;"	d
+MSGID_END_COLL	include/hpl_pgesv.h	149;"	d
+MSGID_END_FACT	include/hpl_pgesv.h	144;"	d
+MSGID_END_PFACT	include/hpl_pgesv.h	142;"	d
+MSGID_END_PTRSV	include/hpl_pgesv.h	146;"	d
+Mabs	include/hpl_misc.h	85;"	d
+Mceil	include/hpl_misc.h	90;"	d
+Mfloor	include/hpl_misc.h	89;"	d
+Miceil	include/hpl_misc.h	91;"	d
+Mindxg2l	include/hpl_pauxil.h	82;"	d
+Mindxg2lp	include/hpl_pauxil.h	96;"	d
+Mindxg2p	include/hpl_pauxil.h	68;"	d
+Mindxl2g	include/hpl_pauxil.h	116;"	d
+Mlowcase	include/hpl_misc.h	94;"	d
+Mmax	include/hpl_misc.h	87;"	d
+Mmin	include/hpl_misc.h	86;"	d
+Mnumroc	include/hpl_pauxil.h	235;"	d
+MnumrocI	include/hpl_pauxil.h	151;"	d
+Mptr	include/hpl_misc.h	99;"	d
+Mupcase	include/hpl_misc.h	93;"	d
+N	src/cuda/fermi_dgemm.c	/^  int N, texoff, lda, ldb;$/;"	m	struct:dtrsm_gpu_64_mm_RT_kernel_args	file:
+N	src/cuda/fermi_dgemm.c	/^  int N, texoff, lda, ldb;$/;"	m	struct:dtrsm_gpu_64_mm_kernel_args	file:
+NK	src/cuda/cuda_dgemm.c	75;"	d	file:
+NM	src/cuda/cuda_dgemm.c	77;"	d	file:
+NN	src/cuda/cuda_dgemm.c	76;"	d	file:
+NN	src/pgesv/HPL_pdgesvK2.c	/^    int NN;$/;"	m	struct:__anon13	file:
+NSTREAMS	src/cuda/cuda_dgemm.c	62;"	d	file:
+OBJS	src/cuda/Makefile	/^OBJS = cuda_dgemm.o fermi_dgemm.o$/;"	m
+PANEL	src/pgesv/HPL_pdgesvK2.c	/^    HPL_T_panel * PANEL;$/;"	m	struct:__anon13	file:
+SHELL	Makefile	/^SHELL            = \/bin\/sh$/;"	m
+SM_COUNT	src/cuda/cuda_dgemm.c	/^    static int SM_COUNT=1;$/;"	v	file:
+STDC_ARGS	include/hpl_misc.h	63;"	d
+STDC_ARGS	include/hpl_misc.h	66;"	d
+HPL_STDC_HEADERS	include/hpl_misc.h	54;"	d
+StringSunStyle	include/hpl_blas.h	208;"	d
+TRANSPOSE_ARGS_SIZE	src/cuda/fermi_dgemm.c	45;"	d	file:
+U	include/hpl_panel.h	/^   double              * U;                               \/* ptr to U *\/$/;"	m	struct:HPL_S_panel
+USE_TEXTURE_FOR_GLOBAL_LOADS	src/cuda/fermi_dgemm.c	43;"	d	file:
+Ublock	include/hpl_panel.h	/^   vsip_block_d        * Ublock;                           \/* U block *\/$/;"	m	struct:HPL_S_panel
+WORK	include/hpl_panel.h	/^   double              * WORK;                          \/* work space *\/$/;"	m	struct:HPL_S_panel
+X	include/hpl_pgesv.h	/^   double              * X;             \/* pointer to solution vector *\/$/;"	m	struct:HPL_S_pmat
+_GNU_SOURCE	src/cuda/cuda_dgemm.c	46;"	d	file:
+_M_BUFF	src/comm/HPL_1rinM.c	104;"	d	file:
+_M_BUFF	src/comm/HPL_1rinM.c	110;"	d	file:
+_M_BUFF	src/comm/HPL_1ring.c	104;"	d	file:
+_M_BUFF	src/comm/HPL_1ring.c	110;"	d	file:
+_M_BUFF	src/comm/HPL_2rinM.c	104;"	d	file:
+_M_BUFF	src/comm/HPL_2rinM.c	110;"	d	file:
+_M_BUFF	src/comm/HPL_2ring.c	104;"	d	file:
+_M_BUFF	src/comm/HPL_2ring.c	110;"	d	file:
+_M_BUFF_R	src/comm/HPL_blong.c	116;"	d	file:
+_M_BUFF_R	src/comm/HPL_blong.c	98;"	d	file:
+_M_BUFF_R1	src/comm/HPL_blonM.c	102;"	d	file:
+_M_BUFF_R1	src/comm/HPL_blonM.c	128;"	d	file:
+_M_BUFF_R2	src/comm/HPL_blonM.c	106;"	d	file:
+_M_BUFF_R2	src/comm/HPL_blonM.c	132;"	d	file:
+_M_BUFF_S	src/comm/HPL_blong.c	112;"	d	file:
+_M_BUFF_S	src/comm/HPL_blong.c	94;"	d	file:
+_M_BUFF_S1	src/comm/HPL_blonM.c	120;"	d	file:
+_M_BUFF_S1	src/comm/HPL_blonM.c	94;"	d	file:
+_M_BUFF_S2	src/comm/HPL_blonM.c	124;"	d	file:
+_M_BUFF_S2	src/comm/HPL_blonM.c	98;"	d	file:
+_M_COUNT	src/comm/HPL_1rinM.c	105;"	d	file:
+_M_COUNT	src/comm/HPL_1rinM.c	111;"	d	file:
+_M_COUNT	src/comm/HPL_1ring.c	105;"	d	file:
+_M_COUNT	src/comm/HPL_1ring.c	111;"	d	file:
+_M_COUNT	src/comm/HPL_2rinM.c	105;"	d	file:
+_M_COUNT	src/comm/HPL_2rinM.c	111;"	d	file:
+_M_COUNT	src/comm/HPL_2ring.c	105;"	d	file:
+_M_COUNT	src/comm/HPL_2ring.c	111;"	d	file:
+_M_COUNT_R	src/comm/HPL_blong.c	117;"	d	file:
+_M_COUNT_R	src/comm/HPL_blong.c	99;"	d	file:
+_M_COUNT_R1	src/comm/HPL_blonM.c	103;"	d	file:
+_M_COUNT_R1	src/comm/HPL_blonM.c	129;"	d	file:
+_M_COUNT_R2	src/comm/HPL_blonM.c	107;"	d	file:
+_M_COUNT_R2	src/comm/HPL_blonM.c	133;"	d	file:
+_M_COUNT_S	src/comm/HPL_blong.c	113;"	d	file:
+_M_COUNT_S	src/comm/HPL_blong.c	95;"	d	file:
+_M_COUNT_S1	src/comm/HPL_blonM.c	121;"	d	file:
+_M_COUNT_S1	src/comm/HPL_blonM.c	95;"	d	file:
+_M_COUNT_S2	src/comm/HPL_blonM.c	125;"	d	file:
+_M_COUNT_S2	src/comm/HPL_blonM.c	99;"	d	file:
+_M_ROLL_BUFF_R	src/comm/HPL_blonM.c	114;"	d	file:
+_M_ROLL_BUFF_R	src/comm/HPL_blonM.c	139;"	d	file:
+_M_ROLL_BUFF_R	src/comm/HPL_blong.c	106;"	d	file:
+_M_ROLL_BUFF_R	src/comm/HPL_blong.c	124;"	d	file:
+_M_ROLL_BUFF_S	src/comm/HPL_blonM.c	110;"	d	file:
+_M_ROLL_BUFF_S	src/comm/HPL_blonM.c	136;"	d	file:
+_M_ROLL_BUFF_S	src/comm/HPL_blong.c	102;"	d	file:
+_M_ROLL_BUFF_S	src/comm/HPL_blong.c	120;"	d	file:
+_M_ROLL_COUNT_R	src/comm/HPL_blonM.c	115;"	d	file:
+_M_ROLL_COUNT_R	src/comm/HPL_blonM.c	140;"	d	file:
+_M_ROLL_COUNT_R	src/comm/HPL_blong.c	107;"	d	file:
+_M_ROLL_COUNT_R	src/comm/HPL_blong.c	125;"	d	file:
+_M_ROLL_COUNT_S	src/comm/HPL_blonM.c	111;"	d	file:
+_M_ROLL_COUNT_S	src/comm/HPL_blonM.c	137;"	d	file:
+_M_ROLL_COUNT_S	src/comm/HPL_blong.c	103;"	d	file:
+_M_ROLL_COUNT_S	src/comm/HPL_blong.c	121;"	d	file:
+_M_ROLL_TYPE_R	src/comm/HPL_blonM.c	116;"	d	file:
+_M_ROLL_TYPE_R	src/comm/HPL_blonM.c	141;"	d	file:
+_M_ROLL_TYPE_R	src/comm/HPL_blong.c	108;"	d	file:
+_M_ROLL_TYPE_R	src/comm/HPL_blong.c	126;"	d	file:
+_M_ROLL_TYPE_S	src/comm/HPL_blonM.c	112;"	d	file:
+_M_ROLL_TYPE_S	src/comm/HPL_blonM.c	138;"	d	file:
+_M_ROLL_TYPE_S	src/comm/HPL_blong.c	104;"	d	file:
+_M_ROLL_TYPE_S	src/comm/HPL_blong.c	122;"	d	file:
+_M_TYPE	src/comm/HPL_1rinM.c	106;"	d	file:
+_M_TYPE	src/comm/HPL_1rinM.c	112;"	d	file:
+_M_TYPE	src/comm/HPL_1ring.c	106;"	d	file:
+_M_TYPE	src/comm/HPL_1ring.c	112;"	d	file:
+_M_TYPE	src/comm/HPL_2rinM.c	106;"	d	file:
+_M_TYPE	src/comm/HPL_2rinM.c	112;"	d	file:
+_M_TYPE	src/comm/HPL_2ring.c	106;"	d	file:
+_M_TYPE	src/comm/HPL_2ring.c	112;"	d	file:
+_M_TYPE_R	src/comm/HPL_blong.c	100;"	d	file:
+_M_TYPE_R	src/comm/HPL_blong.c	118;"	d	file:
+_M_TYPE_R1	src/comm/HPL_blonM.c	104;"	d	file:
+_M_TYPE_R1	src/comm/HPL_blonM.c	130;"	d	file:
+_M_TYPE_R2	src/comm/HPL_blonM.c	108;"	d	file:
+_M_TYPE_R2	src/comm/HPL_blonM.c	134;"	d	file:
+_M_TYPE_S	src/comm/HPL_blong.c	114;"	d	file:
+_M_TYPE_S	src/comm/HPL_blong.c	96;"	d	file:
+_M_TYPE_S1	src/comm/HPL_blonM.c	122;"	d	file:
+_M_TYPE_S1	src/comm/HPL_blonM.c	96;"	d	file:
+_M_TYPE_S2	src/comm/HPL_blonM.c	100;"	d	file:
+_M_TYPE_S2	src/comm/HPL_blonM.c	126;"	d	file:
+a_pitch	src/cuda/fermi_dgemm.c	/^  long long a_pitch, a_start, a_step1;$/;"	m	struct:dgemm_nn_e_kernel_args	file:
+a_pitch	src/cuda/fermi_dgemm.c	/^  long long a_pitch, a_start, a_step1;$/;"	m	struct:dgemm_nt_e_kernel_args	file:
+a_start	src/cuda/fermi_dgemm.c	/^  long long a_pitch, a_start, a_step1;$/;"	m	struct:dgemm_nn_e_kernel_args	file:
+a_start	src/cuda/fermi_dgemm.c	/^  long long a_pitch, a_start, a_step1;$/;"	m	struct:dgemm_nt_e_kernel_args	file:
+a_step1	src/cuda/fermi_dgemm.c	/^  long long a_pitch, a_start, a_step1;$/;"	m	struct:dgemm_nn_e_kernel_args	file:
+a_step1	src/cuda/fermi_dgemm.c	/^  long long a_pitch, a_start, a_step1;$/;"	m	struct:dgemm_nt_e_kernel_args	file:
+a_step1_dy	src/cuda/fermi_dgemm.c	/^  float a_step1_dy;$/;"	m	struct:dgemm_nt_tex_kernel_args	file:
+algo	include/hpl_panel.h	/^   struct HPL_S_palg   * algo;          \/* ptr to the algo parameters *\/$/;"	m	struct:HPL_S_panel	typeref:struct:HPL_S_panel::HPL_S_palg
+align	include/hpl_pgesv.h	/^   int                 align;              \/* data alignment constant *\/$/;"	m	struct:HPL_S_palg
+all_comm	include/hpl_grid.h	/^   MPI_Comm        all_comm;                     \/* grid communicator *\/$/;"	m	struct:HPL_S_grid
+alpha	src/cuda/fermi_dgemm.c	/^  double alpha, beta;$/;"	m	struct:dgemm_nn_e_kernel_args	file:
+alpha	src/cuda/fermi_dgemm.c	/^  double alpha, beta;$/;"	m	struct:dgemm_nt_e_kernel_args	file:
+alpha	src/cuda/fermi_dgemm.c	/^  double alpha, beta;$/;"	m	struct:dgemm_nt_tex_kernel_args	file:
+arch	Makefile	/^arch             = CUDA$/;"	m
+arg	src/pgesv/HPL_pdgesvK2.c	/^static arg_t arg;$/;"	v	file:
+arg_t	src/pgesv/HPL_pdgesvK2.c	/^} arg_t;$/;"	t	typeref:struct:__anon13	file:
+assignDeviceToProcess	src/cuda/cuda_dgemm.c	/^void  assignDeviceToProcess()$/;"	f
+b_pitch	src/cuda/fermi_dgemm.c	/^  long long b_pitch, b_start, b_step1, b_step2;$/;"	m	struct:dgemm_nn_e_kernel_args	file:
+b_pitch	src/cuda/fermi_dgemm.c	/^  long long b_pitch, b_start, b_step1;$/;"	m	struct:dgemm_nt_e_kernel_args	file:
+b_start	src/cuda/fermi_dgemm.c	/^  long long b_pitch, b_start, b_step1, b_step2;$/;"	m	struct:dgemm_nn_e_kernel_args	file:
+b_start	src/cuda/fermi_dgemm.c	/^  long long b_pitch, b_start, b_step1;$/;"	m	struct:dgemm_nt_e_kernel_args	file:
+b_step1	src/cuda/fermi_dgemm.c	/^  long long b_pitch, b_start, b_step1, b_step2;$/;"	m	struct:dgemm_nn_e_kernel_args	file:
+b_step1	src/cuda/fermi_dgemm.c	/^  long long b_pitch, b_start, b_step1;$/;"	m	struct:dgemm_nt_e_kernel_args	file:
+b_step1_dy	src/cuda/fermi_dgemm.c	/^  float b_step1_dy;$/;"	m	struct:dgemm_nt_tex_kernel_args	file:
+b_step2	src/cuda/fermi_dgemm.c	/^  long long b_pitch, b_start, b_step1, b_step2;$/;"	m	struct:dgemm_nn_e_kernel_args	file:
+backs	www/scalability.html	/^<H3><A NAME="backs">Backward Substitution<\/A><\/H3>$/;"	a
+bcast	www/algorithm.html	/^<H3><A NAME="bcast">Panel Broadcast<\/A><\/H3>$/;"	a
+beta	src/cuda/fermi_dgemm.c	/^  double alpha, beta;$/;"	m	struct:dgemm_nn_e_kernel_args	file:
+beta	src/cuda/fermi_dgemm.c	/^  double alpha, beta;$/;"	m	struct:dgemm_nt_e_kernel_args	file:
+beta	src/cuda/fermi_dgemm.c	/^  double alpha, beta;$/;"	m	struct:dgemm_nt_tex_kernel_args	file:
+blas_libs	www/links.html	/^<H3><A NAME="blas_libs">Basic Linear Algebra Subroutines (BLAS)<\/A><\/H3>$/;"	a
+block	include/hpl_pgesv.h	/^   vsip_block_d        * block;$/;"	m	struct:HPL_S_pmat
+blsize	www/faqs.html	/^<H3><A NAME="blsize">What block size NB should I use ?<\/A><\/H3>$/;"	a
+btopo	include/hpl_pgesv.h	/^   HPL_T_TOP           btopo;               \/* row broadcast topology *\/$/;"	m	struct:HPL_S_palg
+buffers	include/hpl_panel.h	/^   void                * * * buffers[2];   \/* buffers for panel bcast *\/$/;"	m	struct:HPL_S_panel
+buffers	src/cuda/fermi_dgemm.c	/^static CUdeviceptr buffers[MAX_STREAMS+1] = { 0 };$/;"	v	file:
+c_pitch	src/cuda/fermi_dgemm.c	/^  long long c_pitch, c_start;$/;"	m	struct:dgemm_nn_e_kernel_args	file:
+c_pitch	src/cuda/fermi_dgemm.c	/^  long long c_pitch, c_start;$/;"	m	struct:dgemm_nt_e_kernel_args	file:
+c_pitch	src/cuda/fermi_dgemm.c	/^  long long c_pitch, c_start;$/;"	m	struct:dgemm_nt_tex_kernel_args	file:
+c_start	src/cuda/fermi_dgemm.c	/^  long long c_pitch, c_start;$/;"	m	struct:dgemm_nn_e_kernel_args	file:
+c_start	src/cuda/fermi_dgemm.c	/^  long long c_pitch, c_start;$/;"	m	struct:dgemm_nt_e_kernel_args	file:
+c_start	src/cuda/fermi_dgemm.c	/^  long long c_pitch, c_start;$/;"	m	struct:dgemm_nt_tex_kernel_args	file:
+check	www/algorithm.html	/^<H3><A NAME="check">Checking the Solution<\/A><\/H3>$/;"	a
+col_comm	include/hpl_grid.h	/^   MPI_Comm        col_comm;                   \/* column communicator *\/$/;"	m	struct:HPL_S_grid
+col_hdim	include/hpl_grid.h	/^   int             col_hdim;     \/* col_ip2 procs hypercube dimension *\/$/;"	m	struct:HPL_S_grid
+col_ip2	include/hpl_grid.h	/^   int             col_ip2;          \/* largest power of two <= npcol *\/$/;"	m	struct:HPL_S_grid
+col_ip2m1	include/hpl_grid.h	/^   int             col_ip2m1;      \/* largest power of two <= npcol-1 *\/$/;"	m	struct:HPL_S_grid
+col_mask	include/hpl_grid.h	/^   int             col_mask;        \/* col_ip2m1 procs hypercube mask *\/$/;"	m	struct:HPL_S_grid
+compaq000	www/results.html	/^<H3><A NAME="compaq000">Compaq 64 nodes (4 ev67 667 Mhz processors per node)$/;"	a
+counts	include/hpl_panel.h	/^   int                 counts [2];          \/* counts for panel bcast *\/$/;"	m	struct:HPL_S_panel
+cp	include/hpl_blas.h	/^typedef struct { char *cp; F77_INTEGER len; } F77_CHAR;$/;"	m	struct:__anon6
+cp	include/hpl_blas.h	/^typedef struct { char *cp; F77_INTEGER len; } F77_CHAR;$/;"	m	struct:__anon7
+ctx	src/cuda/fermi_dgemm.c	/^static CUcontext ctx;$/;"	v	file:
+depth	include/hpl_pgesv.h	/^   int                 depth;                     \/* look-ahead depth *\/$/;"	m	struct:HPL_S_palg
+desc	www/tuning.html	/^<H3><A NAME="desc">Description of the HPL.dat File<\/A><\/H3>$/;"	a
+dev_scratch	src/cuda/cuda_dgemm.c	/^  static double *dev_scratch[NSTREAMS+1];$/;"	v	file:
+dgemm_kernels_sass_cubin_bits	src/cuda/fermi_dgemm.c	/^static const unsigned char dgemm_kernels_sass_cubin_bits[] = {$/;"	v	file:
+dgemm_nn_e	src/cuda/fermi_dgemm.c	/^static int dgemm_nn_e(int m, int n, int k,$/;"	f	file:
+dgemm_nn_e_kernel_args	src/cuda/fermi_dgemm.c	/^struct dgemm_nn_e_kernel_args {$/;"	s	file:
+dgemm_nt_e	src/cuda/fermi_dgemm.c	/^static int dgemm_nt_e(int m, int n, int k,$/;"	f	file:
+dgemm_nt_e_kernel_args	src/cuda/fermi_dgemm.c	/^struct dgemm_nt_e_kernel_args {$/;"	s	file:
+dgemm_nt_tex	src/cuda/fermi_dgemm.c	/^static int dgemm_nt_tex(int m, int n, int k,$/;"	f	file:
+dgemm_nt_tex_kernel_args	src/cuda/fermi_dgemm.c	/^struct dgemm_nt_tex_kernel_args {$/;"	s	file:
+done_init	src/cuda/fermi_dgemm.c	/^static int done_init = 0;$/;"	v	file:
+dst	src/cuda/fermi_dgemm.c	/^  long long dst, src;$/;"	m	struct:transpose_args	file:
+dtrsm_64_mm	src/cuda/fermi_dgemm.c	/^static int dtrsm_64_mm(int N, double *A, int texoff,  double *B, int lda, int ldb, int stream)$/;"	f	file:
+dtrsm_64_mm_RT	src/cuda/fermi_dgemm.c	/^static int dtrsm_64_mm_RT(int N, double *A, int texoff,  double *B, int lda, int ldb, int stream)$/;"	f	file:
+dtrsm_gpu	src/cuda/fermi_dgemm.c	/^int dtrsm_gpu( char side, char uplo, char transa, $/;"	f
+dtrsm_gpu_64_mm_RT_kernel_args	src/cuda/fermi_dgemm.c	/^struct dtrsm_gpu_64_mm_RT_kernel_args {$/;"	s	file:
+dtrsm_gpu_64_mm_kernel_args	src/cuda/fermi_dgemm.c	/^struct dtrsm_gpu_64_mm_kernel_args {$/;"	s	file:
+dtypes	include/hpl_panel.h	/^   MPI_Datatype        dtypes [2];      \/* data types for panel bcast *\/$/;"	m	struct:HPL_S_panel
+elem_size	src/cuda/fermi_dgemm.c	/^  int width, height, in_pitch, out_pitch, elem_size;$/;"	m	struct:transpose_args	file:
+epsil	include/hpl_ptest.h	/^   double              epsil;                      \/* epsilon machine *\/$/;"	m	struct:HPL_S_test
+equil	include/hpl_pgesv.h	/^   int                 equil;                        \/* Equilibration *\/$/;"	m	struct:HPL_S_palg
+fermiCreateStreams	src/cuda/fermi_dgemm.c	/^int fermiCreateStreams(int count)$/;"	f
+fermiDgemm	src/cuda/fermi_dgemm.c	/^int fermiDgemm(char transa, char transb, int m, int n, int k,$/;"	f
+fermiDgemm_stream	src/cuda/fermi_dgemm.c	/^int fermiDgemm_stream(char transa, char transb, int m, int n, int k,$/;"	f
+fermiGetMatrix	src/cuda/fermi_dgemm.c	/^int fermiGetMatrix(int rows, int cols, int elemSize, const void *A, int lda, void *B, int ldb, int stream)$/;"	f
+fermiSetMatrix	src/cuda/fermi_dgemm.c	/^int fermiSetMatrix(int rows, int cols, int elemSize, const void *A, int lda, void *B, int ldb, int stream)$/;"	f
+fermiSyncStream	src/cuda/fermi_dgemm.c	/^int fermiSyncStream(int stream)$/;"	f
+fermi_dgemm_init	src/cuda/fermi_dgemm.c	/^static int fermi_dgemm_init(void)$/;"	f	file:
+fermi_transpose	src/cuda/fermi_dgemm.c	/^int fermi_transpose(double *dst, double *src, int width, int height, int in_pitch, int out_pitch, int stream )$/;"	f
+first_time	src/cuda/cuda_dgemm.c	/^    static int first_time=1;$/;"	v	file:
+first_time_work	src/pgesv/HPL_pdgesvK2.c	/^static int first_time_work = 1;$/;"	v	file:
+free_work_now	include/hpl_panel.h	/^   unsigned int               free_work_now;   \/* should we deallocate *\/$/;"	m	struct:HPL_S_panel
+fsthr	include/hpl_pgesv.h	/^   int                 fsthr;                   \/* Swapping threshold *\/$/;"	m	struct:HPL_S_palg
+fswap	include/hpl_pgesv.h	/^   HPL_T_SWAP          fswap;                   \/* Swapping algorithm *\/$/;"	m	struct:HPL_S_palg
+func_dgemm_nn_e	src/cuda/fermi_dgemm.c	/^static CUfunction func_transpose, func_dgemm_nn_e, func_dgemm_nt_e, func_dtrsm_gpu_64_mm, func_dtrsm_gpu_64_mm_RT;$/;"	v	file:
+func_dgemm_nt_e	src/cuda/fermi_dgemm.c	/^static CUfunction func_transpose, func_dgemm_nn_e, func_dgemm_nt_e, func_dtrsm_gpu_64_mm, func_dtrsm_gpu_64_mm_RT;$/;"	v	file:
+func_dgemm_nt_tex	src/cuda/fermi_dgemm.c	/^static CUfunction func_dgemm_nt_tex, func_dgemm_nt_tex_64;$/;"	v	file:
+func_dgemm_nt_tex_64	src/cuda/fermi_dgemm.c	/^static CUfunction func_dgemm_nt_tex, func_dgemm_nt_tex_64;$/;"	v	file:
+func_dtrsm_gpu_64_mm	src/cuda/fermi_dgemm.c	/^static CUfunction func_transpose, func_dgemm_nn_e, func_dgemm_nt_e, func_dtrsm_gpu_64_mm, func_dtrsm_gpu_64_mm_RT;$/;"	v	file:
+func_dtrsm_gpu_64_mm_RT	src/cuda/fermi_dgemm.c	/^static CUfunction func_transpose, func_dgemm_nn_e, func_dgemm_nt_e, func_dtrsm_gpu_64_mm, func_dtrsm_gpu_64_mm_RT;$/;"	v	file:
+func_transpose	src/cuda/fermi_dgemm.c	/^static CUfunction func_transpose, func_dgemm_nn_e, func_dgemm_nt_e, func_dtrsm_gpu_64_mm, func_dtrsm_gpu_64_mm_RT;$/;"	v	file:
+getrusage	www/HPL_ptimer_cputime.html	/^function getrusage() is used.$/;"	f
+getrusage	www/HPL_timer_cputime.html	/^function getrusage() is used.$/;"	f
+gpu_per_node	src/cuda/cuda_dgemm.c	/^    static int gpu_per_node=0;$/;"	v	file:
+grid	include/hpl_panel.h	/^   struct HPL_S_grid   * grid;             \/* ptr to the process grid *\/$/;"	m	struct:HPL_S_panel	typeref:struct:HPL_S_panel::HPL_S_grid
+grid	www/faqs.html	/^<H3><A NAME="grid">What process grid ratio P x Q should I use ?<\/A><\/H3>$/;"	a
+height	src/cuda/fermi_dgemm.c	/^  int width, height, in_pitch, out_pitch, elem_size;$/;"	m	struct:transpose_args	file:
+helper_nvcc_cubin_bits	src/cuda/fermi_dgemm.c	/^static const unsigned char helper_nvcc_cubin_bits[] = {$/;"	v	file:
+host_name	src/cuda/cuda_dgemm.c	/^       static char     host_name[20];$/;"	v	file:
+host_name	src/cuda/cuda_dgemm.c	/^       static char     host_name[MPI_MAX_PROCESSOR_NAME];$/;"	v	file:
+ia	include/hpl_panel.h	/^   int                 ia;  \/* global row index of trailing part of A *\/$/;"	m	struct:HPL_S_panel
+iam	include/hpl_grid.h	/^   int             iam;                        \/* my rank in the grid *\/$/;"	m	struct:HPL_S_grid
+ias	testing/matgen/HPL_setran.c	/^static int       ias[2], ics[2], irand[2];$/;"	v	file:
+ics	testing/matgen/HPL_setran.c	/^static int       ias[2], ics[2], irand[2];$/;"	v	file:
+ii	include/hpl_panel.h	/^   int                 ii;   \/* local row index of trailing part of A *\/$/;"	m	struct:HPL_S_panel
+imax	src/cuda/cuda_dgemm.c	81;"	d	file:
+imin	src/cuda/cuda_dgemm.c	80;"	d	file:
+imin	src/cuda/fermi_dgemm.c	38;"	d	file:
+in_pitch	src/cuda/fermi_dgemm.c	/^  int width, height, in_pitch, out_pitch, elem_size;$/;"	m	struct:transpose_args	file:
+info	include/hpl_pgesv.h	/^   int                 info;                    \/* computational flag *\/$/;"	m	struct:HPL_S_pmat
+irand	testing/matgen/HPL_setran.c	/^static int       ias[2], ics[2], irand[2];$/;"	v	file:
+ja	include/hpl_panel.h	/^   int                 ja;  \/* global col index of trailing part of A *\/$/;"	m	struct:HPL_S_panel
+jb	include/hpl_panel.h	/^   int                 jb;                             \/* panel width *\/$/;"	m	struct:HPL_S_panel
+jj	include/hpl_panel.h	/^   int                 jj;   \/* local col index of trailing part of A *\/$/;"	m	struct:HPL_S_panel
+k_major	src/cuda/fermi_dgemm.c	/^  int k_major, k_minor;$/;"	m	struct:dgemm_nn_e_kernel_args	file:
+k_major	src/cuda/fermi_dgemm.c	/^  int k_major, k_minor;$/;"	m	struct:dgemm_nt_e_kernel_args	file:
+k_major	src/cuda/fermi_dgemm.c	/^  int k_major, k_minor;$/;"	m	struct:dgemm_nt_tex_kernel_args	file:
+k_minor	src/cuda/fermi_dgemm.c	/^  int k_major, k_minor;$/;"	m	struct:dgemm_nn_e_kernel_args	file:
+k_minor	src/cuda/fermi_dgemm.c	/^  int k_major, k_minor;$/;"	m	struct:dgemm_nt_e_kernel_args	file:
+k_minor	src/cuda/fermi_dgemm.c	/^  int k_major, k_minor;$/;"	m	struct:dgemm_nt_tex_kernel_args	file:
+kfail	include/hpl_ptest.h	/^   int                 kfail;                    \/* # of tests failed *\/$/;"	m	struct:HPL_S_test
+kpass	include/hpl_ptest.h	/^   int                 kpass;                    \/* # of tests passed *\/$/;"	m	struct:HPL_S_test
+kskip	include/hpl_ptest.h	/^   int                 kskip;                   \/* # of tests skipped *\/$/;"	m	struct:HPL_S_test
+ktest	include/hpl_ptest.h	/^   int                 ktest;                \/* total number of tests *\/$/;"	m	struct:HPL_S_test
+ld	include/hpl_pgesv.h	/^   int                 ld;                 \/* local leading dimension *\/$/;"	m	struct:HPL_S_pmat
+lda	include/hpl_panel.h	/^   int                 lda;           \/* local leading dim of array A *\/$/;"	m	struct:HPL_S_panel
+lda	src/cuda/fermi_dgemm.c	/^  int N, texoff, lda, ldb;$/;"	m	struct:dtrsm_gpu_64_mm_RT_kernel_args	file:
+lda	src/cuda/fermi_dgemm.c	/^  int N, texoff, lda, ldb;$/;"	m	struct:dtrsm_gpu_64_mm_kernel_args	file:
+ldb	src/cuda/fermi_dgemm.c	/^  int N, texoff, lda, ldb;$/;"	m	struct:dtrsm_gpu_64_mm_RT_kernel_args	file:
+ldb	src/cuda/fermi_dgemm.c	/^  int N, texoff, lda, ldb;$/;"	m	struct:dtrsm_gpu_64_mm_kernel_args	file:
+ldl2	include/hpl_panel.h	/^   int                 ldl2;         \/* local leading dim of array L2 *\/$/;"	m	struct:HPL_S_panel
+len	include/hpl_blas.h	/^typedef struct { char *cp; F77_INTEGER len; } F77_CHAR;$/;"	m	struct:__anon6
+len	include/hpl_blas.h	/^typedef struct { char *cp; F77_INTEGER len; } F77_CHAR;$/;"	m	struct:__anon7
+len	include/hpl_panel.h	/^   int                 len;      \/* length of the buffer to broadcast *\/$/;"	m	struct:HPL_S_panel
+look_ahead	www/algorithm.html	/^<H3><A NAME="look_ahead">Look-ahead<\/A><\/H3>$/;"	a
+m	include/hpl_panel.h	/^   int                 m;   \/* global # of rows of trailing part of A *\/$/;"	m	struct:HPL_S_panel
+main	testing/ptest/HPL_pddriver.c	/^int main$/;"	f
+main	www/algorithm.html	/^<H3><A NAME="main">Main Algorithm<\/A><\/H3>$/;"	a
+max_work_size	include/hpl_panel.h	/^   unsigned int               max_work_size; \/* largest size of WORK space *\/$/;"	m	struct:HPL_S_panel
+mod_help	src/cuda/fermi_dgemm.c	/^static CUmodule mod_help, mod_kern;$/;"	v	file:
+mod_kern	src/cuda/fermi_dgemm.c	/^static CUmodule mod_help, mod_kern;$/;"	v	file:
+mp	include/hpl_panel.h	/^   int                 mp;   \/* local # of rows of trailing part of A *\/$/;"	m	struct:HPL_S_panel
+mp	include/hpl_pgesv.h	/^   int                 mp;                    \/* local number of rows *\/$/;"	m	struct:HPL_S_pmat
+mpi_libs	www/links.html	/^<H3><A NAME="mpi_libs">Message Passing Interface (MPI)<\/A><\/H3>$/;"	a
+msgid	include/hpl_panel.h	/^   int                 msgid;           \/* message id for panel bcast *\/$/;"	m	struct:HPL_S_panel
+mycol	include/hpl_grid.h	/^   int             mycol;             \/* my column number in the grid *\/$/;"	m	struct:HPL_S_grid
+mydev	src/cuda/cuda_dgemm.c	/^    static int mydev;$/;"	v	file:
+myrank	src/cuda/cuda_dgemm.c	/^    static int myrank=0;$/;"	v	file:
+myrow	include/hpl_grid.h	/^   int             myrow;                \/* my row number in the grid *\/$/;"	m	struct:HPL_S_grid
+n	include/hpl_panel.h	/^   int                 n;   \/* global # of cols of trailing part of A *\/$/;"	m	struct:HPL_S_panel
+n	include/hpl_pgesv.h	/^   int                 n;                      \/* global problem size *\/$/;"	m	struct:HPL_S_pmat
+nb	include/hpl_panel.h	/^   int                 nb;            \/* distribution blocking factor *\/$/;"	m	struct:HPL_S_panel
+nb	include/hpl_pgesv.h	/^   int                 nb;                         \/* blocking factor *\/$/;"	m	struct:HPL_S_pmat
+nbdiv	include/hpl_pgesv.h	/^   int                 nbdiv;            \/* recursive division factor *\/$/;"	m	struct:HPL_S_palg
+nbmin	include/hpl_pgesv.h	/^   int                 nbmin;         \/* recursion stopping criterium *\/$/;"	m	struct:HPL_S_palg
+npcol	include/hpl_grid.h	/^   int             npcol;       \/* the total # of columns in the grid *\/$/;"	m	struct:HPL_S_grid
+nprocs	include/hpl_grid.h	/^   int             nprocs;        \/* the total # of procs in the grid *\/$/;"	m	struct:HPL_S_grid
+nprow	include/hpl_grid.h	/^   int             nprow;          \/* the total # of rows in the grid *\/$/;"	m	struct:HPL_S_grid
+nq	include/hpl_panel.h	/^   int                 nq;   \/* local # of cols of trailing part of A *\/$/;"	m	struct:HPL_S_panel
+nq	include/hpl_pgesv.h	/^   int                 nq;                 \/* local number of columns *\/$/;"	m	struct:HPL_S_pmat
+num_streams	src/cuda/fermi_dgemm.c	/^int num_streams = 0;$/;"	v
+options	www/faqs.html	/^<H3><A NAME="options">Why so many options in HPL.dat ?<\/A><\/H3>$/;"	a
+order	include/hpl_grid.h	/^   HPL_T_ORDER     order;        \/* ordering of the procs in the grid *\/$/;"	m	struct:HPL_S_grid
+out_pitch	src/cuda/fermi_dgemm.c	/^  int width, height, in_pitch, out_pitch, elem_size;$/;"	m	struct:transpose_args	file:
+outfp	include/hpl_ptest.h	/^   FILE *              outfp;       \/* output stream (only in proc 0) *\/$/;"	m	struct:HPL_S_test
+outperf	www/faqs.html	/^<H3><A NAME="outperf">Can HPL be Outperformed ?<\/A><\/H3>$/;"	a
+parallel_LUfact	www/references.html	/^<H3><A NAME="parallel_LUfact">Parallel LU Factorization<\/A><\/H3>$/;"	a
+parallel_matmul	www/references.html	/^<H3><A NAME="parallel_matmul">Parallel Matrix Multiply<\/A><\/H3>$/;"	a
+parallel_trsolv	www/references.html	/^<H3><A NAME="parallel_trsolv">Parallel Triangular Solve<\/A><\/H3>$/;"	a
+pbsize	www/faqs.html	/^<H3><A NAME="pbsize">What problem size N should I run ?<\/A><\/H3>$/;"	a
+pcol	include/hpl_panel.h	/^   int                 pcol;  \/* proc. col owning 1st col of trail. A *\/$/;"	m	struct:HPL_S_panel
+pfact	include/hpl_pgesv.h	/^   HPL_T_FACT          pfact;                   \/* panel fact variant *\/$/;"	m	struct:HPL_S_palg
+pfact	www/algorithm.html	/^<H3><A NAME="pfact">Panel Factorization<\/A><\/H3>$/;"	a
+pfact	www/scalability.html	/^<H3><A NAME="pfact">Panel Factorization and Broadcast<\/A><\/H3>$/;"	a
+pffun	include/hpl_pgesv.h	/^   HPL_T_PFA_FUN       pffun;              \/* panel fact function ptr *\/$/;"	m	struct:HPL_S_palg
+pmat	include/hpl_panel.h	/^   struct HPL_S_pmat   * pmat;         \/* ptr to the local array info *\/$/;"	m	struct:HPL_S_panel	typeref:struct:HPL_S_panel::HPL_S_pmat
+prow	include/hpl_panel.h	/^   int                 prow;  \/* proc. row owning 1st row of trail. A *\/$/;"	m	struct:HPL_S_panel
+recursiv_LUfact	www/references.html	/^<H3><A NAME="recursiv_LUfact">Recursive LU Factorization<\/A><\/H3>$/;"	a
+request	include/hpl_panel.h	/^   MPI_Request         request[1];        \/* requests for panel bcast *\/$/;"	m	struct:HPL_S_panel
+rfact	include/hpl_pgesv.h	/^   HPL_T_FACT          rfact;               \/* recursive fact variant *\/$/;"	m	struct:HPL_S_palg
+rffun	include/hpl_pgesv.h	/^   HPL_T_RFA_FUN       rffun;          \/* recursive fact function ptr *\/$/;"	m	struct:HPL_S_palg
+row_comm	include/hpl_grid.h	/^   MPI_Comm        row_comm;                      \/* row communicator *\/$/;"	m	struct:HPL_S_grid
+row_hdim	include/hpl_grid.h	/^   int             row_hdim;     \/* row_ip2 procs hypercube dimension *\/$/;"	m	struct:HPL_S_grid
+row_ip2	include/hpl_grid.h	/^   int             row_ip2;          \/* largest power of two <= nprow *\/$/;"	m	struct:HPL_S_grid
+row_ip2m1	include/hpl_grid.h	/^   int             row_ip2m1;      \/* largest power of two <= nprow-1 *\/$/;"	m	struct:HPL_S_grid
+row_mask	include/hpl_grid.h	/^   int             row_mask;        \/* row_ip2m1 procs hypercube mask *\/$/;"	m	struct:HPL_S_grid
+rtptr_to_devptr	src/cuda/fermi_dgemm.c	/^static inline CUdeviceptr rtptr_to_devptr(const void *rtptr)$/;"	f	file:
+scratch_size	src/cuda/cuda_dgemm.c	/^  static size_t scratch_size;$/;"	v	file:
+src	src/cuda/fermi_dgemm.c	/^  long long dst, src;$/;"	m	struct:transpose_args	file:
+status	include/hpl_panel.h	/^   MPI_Status          status [1];          \/* status for panel bcast *\/$/;"	m	struct:HPL_S_panel
+stream	src/cuda/cuda_dgemm.c	/^  static int stream[NSTREAMS];$/;"	v	file:
+streams	src/cuda/fermi_dgemm.c	/^static CUstream streams[MAX_STREAMS+1] = { 0 };$/;"	v	file:
+stringCmp	src/cuda/cuda_dgemm.c	/^int stringCmp( const void *a, const void *b)$/;"	f
+texoff	src/cuda/fermi_dgemm.c	/^  int N, texoff, lda, ldb;$/;"	m	struct:dtrsm_gpu_64_mm_RT_kernel_args	file:
+texoff	src/cuda/fermi_dgemm.c	/^  int N, texoff, lda, ldb;$/;"	m	struct:dtrsm_gpu_64_mm_kernel_args	file:
+texref_Atex	src/cuda/fermi_dgemm.c	/^static CUtexref texref_Atex;$/;"	v	file:
+texref_a	src/cuda/fermi_dgemm.c	/^static CUtexref texref_a, texref_b;$/;"	v	file:
+texref_b	src/cuda/fermi_dgemm.c	/^static CUtexref texref_a, texref_b;$/;"	v	file:
+thrsh	include/hpl_ptest.h	/^   double              thrsh;                            \/* threshold *\/$/;"	m	struct:HPL_S_test
+tips	www/tuning.html	/^<H3><A NAME="tips">Guide Lines<\/A><\/H3>$/;"	a
+total	www/scalability.html	/^<H3><A NAME="total">Putting it All Together<\/A><\/H3>$/;"	a
+transpose_args	src/cuda/fermi_dgemm.c	/^struct transpose_args {$/;"	s	file:
+trsv	www/algorithm.html	/^<H3><A NAME="trsv">Backward Substitution<\/A><\/H3>$/;"	a
+updat	www/scalability.html	/^<H3><A NAME="updat">Trailing Submatrix Update<\/A><\/H3>$/;"	a
+update	www/algorithm.html	/^<H3><A NAME="update">Update<\/A><\/H3>$/;"	a
+upfun	include/hpl_pgesv.h	/^   HPL_T_UPD_FUN       upfun;                      \/* update function *\/$/;"	m	struct:HPL_S_palg
+upfun_swap	include/hpl_pgesv.h	/^   HPL_T_UPD_FUN2       upfun_swap;   \/* update trsm_gemm function *\/$/;"	m	struct:HPL_S_palg
+upfun_trsm_gemm	include/hpl_pgesv.h	/^   HPL_T_UPD_FUN2       upfun_trsm_gemm;   \/* update trsm_gemm function *\/$/;"	m	struct:HPL_S_palg
+use_hand_coded_kernels	src/cuda/fermi_dgemm.c	/^static int use_hand_coded_kernels = 1;  \/\/ use the fast ones by default$/;"	v	file:
+use_native_nn_kernel	src/cuda/fermi_dgemm.c	/^static int use_native_nn_kernel = 0;    \/\/ use the native NN or transpose+NT?$/;"	v	file:
+use_tex_based_kernels	src/cuda/fermi_dgemm.c	/^static int use_tex_based_kernels = 1;   \/\/ use the tex-based kernels by default$/;"	v	file:
+vsip_libs	www/links.html	/^<H3><A NAME="vsip_libs">Vector Signal Image Processing Library (VSIPL)<\/A><\/H3>$/;"	a
+wallclock	src/cuda/cuda_dgemm.c	/^double wallclock(void)$/;"	f
+width	src/cuda/fermi_dgemm.c	/^  int width, height, in_pitch, out_pitch, elem_size;$/;"	m	struct:transpose_args	file:
+work	src/pgesv/HPL_pdgesvK2.c	/^void* work(void* bleh) {$/;"	f
+work_end	src/pgesv/HPL_pdgesvK2.c	/^static pthread_cond_t work_end = PTHREAD_COND_INITIALIZER;$/;"	v	file:
+work_lock	src/pgesv/HPL_pdgesvK2.c	/^static pthread_mutex_t work_lock = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+work_start	src/pgesv/HPL_pdgesvK2.c	/^static pthread_cond_t work_start = PTHREAD_COND_INITIALIZER;$/;"	v	file:
+workers	src/pgesv/HPL_pdgesvK2.c	/^static int workers = 0;$/;"	v	file:
+xhpl	testing/ptest/CUDA/Makefile	/^xhpl             = $(BINdir)\/xhpl$/;"	m

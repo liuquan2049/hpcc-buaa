@@ -1,0 +1,226 @@
+########################################################################
+This is the DARPA/DOE HPC Challenge Benchmark version 1.5.0 October 2012
+Produced by Jack Dongarra and Piotr Luszczek
+Innovative Computing Laboratory
+University of Tennessee Knoxville and Oak Ridge National Laboratory
+
+See the source files for authors of specific codes.
+Compiled on Jun  1 2017 at 10:57:09
+Current time (1496374676) is Fri Jun  2 11:37:56 2017
+
+Hostname: 'gpu1'
+########################################################################
+================================================================================
+HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   10000 
+NB     :     192 
+PMAP   : Row-major process mapping
+P      :       1 
+Q      :       1 
+PFACT  :   Right 
+NBMIN  :       4 
+NDIV   :       2 
+RFACT  :   Crout 
+BCAST  :  1ringM 
+DEPTH  :       1 
+SWAP   : Mix (threshold = 64)
+L1     : transposed form
+U      : transposed form
+EQUIL  : yes
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Begin of StarDGEMM section.
+Scaled residual: 1.18454e+15
+Node(s) with error 0
+Minimum Gflop/s 3978.776243
+Average Gflop/s 4253.206927
+Maximum Gflop/s 4452.150015
+Current time (1496374680) is Fri Jun  2 11:38:00 2017
+
+End of StarDGEMM section.
+Begin of SingleDGEMM section.
+Node(s) with error 0
+Node selected 1
+Single DGEMM Gflop/s 4396.699167
+Current time (1496374683) is Fri Jun  2 11:38:03 2017
+
+End of SingleDGEMM section.
+Begin of Summary section.
+VersionMajor=1
+VersionMinor=5
+VersionMicro=0
+VersionRelease=f
+LANG=C
+Success=0
+sizeof_char=1
+sizeof_short=2
+sizeof_int=4
+sizeof_long=8
+sizeof_void_ptr=8
+sizeof_size_t=8
+sizeof_float=4
+sizeof_double=8
+sizeof_s64Int=8
+sizeof_u64Int=8
+sizeof_struct_double_double=16
+CommWorldProcs=10
+MPI_Wtick=1.000000e-06
+HPL_Tflops=-1
+HPL_time=-1
+HPL_eps=-1
+HPL_RnormI=-1
+HPL_Anorm1=-1
+HPL_AnormI=-1
+HPL_Xnorm1=-1
+HPL_XnormI=-1
+HPL_BnormI=6.95223e-310
+HPL_N=-1
+HPL_NB=-1
+HPL_nprow=-1
+HPL_npcol=-1
+HPL_depth=-1
+HPL_nbdiv=-1
+HPL_nbmin=-1
+HPL_cpfact=-
+HPL_crfact=-
+HPL_ctop=-
+HPL_order=-
+HPL_dMACH_EPS=1.110223e-16
+HPL_dMACH_SFMIN=2.225074e-308
+HPL_dMACH_BASE=2.000000e+00
+HPL_dMACH_PREC=2.220446e-16
+HPL_dMACH_MLEN=5.300000e+01
+HPL_dMACH_RND=1.000000e+00
+HPL_dMACH_EMIN=-1.021000e+03
+HPL_dMACH_RMIN=2.225074e-308
+HPL_dMACH_EMAX=1.024000e+03
+HPL_dMACH_RMAX=1.797693e+308
+HPL_sMACH_EPS=5.960464e-08
+HPL_sMACH_SFMIN=1.175494e-38
+HPL_sMACH_BASE=2.000000e+00
+HPL_sMACH_PREC=1.192093e-07
+HPL_sMACH_MLEN=2.400000e+01
+HPL_sMACH_RND=1.000000e+00
+HPL_sMACH_EMIN=-1.250000e+02
+HPL_sMACH_RMIN=1.175494e-38
+HPL_sMACH_EMAX=1.280000e+02
+HPL_sMACH_RMAX=3.402823e+38
+dweps=1.110223e-16
+sweps=5.960464e-08
+HPLMaxProcs=1
+HPLMinProcs=1
+DGEMM_N=5773
+StarDGEMM_Gflops=4253.21
+SingleDGEMM_Gflops=4396.7
+PTRANS_GBs=-1
+PTRANS_time=-1
+PTRANS_residual=-1
+PTRANS_n=-1
+PTRANS_nb=-1
+PTRANS_nprow=-1
+PTRANS_npcol=-1
+MPIRandomAccess_LCG_N=-1
+MPIRandomAccess_LCG_time=-1
+MPIRandomAccess_LCG_CheckTime=-1
+MPIRandomAccess_LCG_Errors=-1
+MPIRandomAccess_LCG_ErrorsFraction=-1
+MPIRandomAccess_LCG_ExeUpdates=-1
+MPIRandomAccess_LCG_GUPs=-1
+MPIRandomAccess_LCG_TimeBound=-1
+MPIRandomAccess_LCG_Algorithm=-1
+MPIRandomAccess_N=-1
+MPIRandomAccess_time=-1
+MPIRandomAccess_CheckTime=-1
+MPIRandomAccess_Errors=-1
+MPIRandomAccess_ErrorsFraction=-1
+MPIRandomAccess_ExeUpdates=-1
+MPIRandomAccess_GUPs=-1
+MPIRandomAccess_TimeBound=-1
+MPIRandomAccess_Algorithm=-1
+RandomAccess_LCG_N=-1
+StarRandomAccess_LCG_GUPs=0
+SingleRandomAccess_LCG_GUPs=6.95225e-310
+RandomAccess_N=-1
+StarRandomAccess_GUPs=-1
+SingleRandomAccess_GUPs=-1
+STREAM_VectorSize=-1
+STREAM_Threads=1
+StarSTREAM_Copy=-1
+StarSTREAM_Scale=-1
+StarSTREAM_Add=-1
+StarSTREAM_Triad=-1
+SingleSTREAM_Copy=-1
+SingleSTREAM_Scale=-1
+SingleSTREAM_Add=-1
+SingleSTREAM_Triad=-1
+FFT_N=-1
+StarFFT_Gflops=-1
+SingleFFT_Gflops=-1
+MPIFFT_N=-1
+MPIFFT_Gflops=-1
+MPIFFT_maxErr=-1
+MPIFFT_Procs=-1
+MaxPingPongLatency_usec=-1
+RandomlyOrderedRingLatency_usec=-1
+MinPingPongBandwidth_GBytes=-1
+NaturallyOrderedRingBandwidth_GBytes=-1
+RandomlyOrderedRingBandwidth_GBytes=-1
+MinPingPongLatency_usec=-1
+AvgPingPongLatency_usec=-1
+MaxPingPongBandwidth_GBytes=-1
+AvgPingPongBandwidth_GBytes=-1
+NaturallyOrderedRingLatency_usec=-1
+FFTEnblk=-1
+FFTEnp=-1
+FFTEl2size=-1
+M_OPENMP=-1
+omp_get_num_threads=0
+omp_get_max_threads=0
+omp_get_num_procs=0
+MemProc=-1
+MemSpec=-1
+MemVal=-1
+MPIFFT_time0=0
+MPIFFT_time1=0
+MPIFFT_time2=0
+MPIFFT_time3=0
+MPIFFT_time4=0
+MPIFFT_time5=0
+MPIFFT_time6=0
+CPS_HPCC_FFT_235=0
+CPS_HPCC_FFTW_ESTIMATE=0
+CPS_HPCC_MEMALLCTR=0
+CPS_HPL_USE_GETPROCESSTIMES=0
+CPS_RA_SANDIA_NOPT=0
+CPS_RA_SANDIA_OPT2=0
+CPS_USING_FFTW=0
+End of Summary section.
+########################################################################
+End of HPC Challenge tests.
+Current time (1496374683) is Fri Jun  2 11:38:03 2017
+
+########################################################################
