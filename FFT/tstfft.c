@@ -57,10 +57,6 @@ TestFFT1(HPCC_Params *params, int doIO, FILE *outFile, double *UGflops, int *Un,
   HPCC_bcnrand( 2*n, 0, in );
   t0 += MPI_Wtime();
 
-  cudaMalloc((void**)&d_in,  sizeof(cufftComplex)*n);
-  cudaMalloc((void**)&d_out, sizeof(cufftComplex)*n);
-  cudaMemcpy(d_in, in, sizeof(cufftComplex)*n, cudaMemcpyHostToDevice);
-  cudaMemcpy(d_out,out,sizeof(cufftComplex)*n, cudaMemcpyHostToDevice);
 
 #ifdef HPCC_FFTW_ESTIMATE
   flags = FFTW_ESTIMATE;
@@ -70,6 +66,10 @@ TestFFT1(HPCC_Params *params, int doIO, FILE *outFile, double *UGflops, int *Un,
 
   t1 = -MPI_Wtime();
 //  p = fftw_create_plan( n, FFTW_FORWARD, flags );
+  cudaMalloc((void**)&d_in,  sizeof(cufftComplex)*n);
+  cudaMalloc((void**)&d_out, sizeof(cufftComplex)*n);
+  cudaMemcpy(d_in, in, sizeof(cufftComplex)*n, cudaMemcpyHostToDevice);
+  cudaMemcpy(d_out,out,sizeof(cufftComplex)*n, cudaMemcpyHostToDevice);
   cufftPlan1d(&d_plan, n/2, CUFFT_C2C, 2);
   t1 += MPI_Wtime();
 
@@ -78,7 +78,7 @@ TestFFT1(HPCC_Params *params, int doIO, FILE *outFile, double *UGflops, int *Un,
   t2 = -MPI_Wtime();
   cudaThreadSynchronize();
 //  fftw_one( p, in, out );
-  cufftExecC2C(d_plan, d_in, d_out, CUFFT_FORWARD);
+ cufftExecC2C(d_plan, d_in, d_out, CUFFT_FORWARD);
   cudaThreadSynchronize();
   t2 += MPI_Wtime();
 
@@ -94,11 +94,11 @@ TestFFT1(HPCC_Params *params, int doIO, FILE *outFile, double *UGflops, int *Un,
     t3 += MPI_Wtime();
 
     cufftDestroy(d_plan);
+
     cudaMemcpy(in, d_in, sizeof(cufftComplex)*n, cudaMemcpyDeviceToHost);
     cudaMemcpy(out,d_out,sizeof(cufftComplex)*n, cudaMemcpyDeviceToHost);
     cudaFree(d_in);
-    cudaFree(d_out);
-
+    cudaFree(d_out);    
 
     HPCC_fftw_destroy_plan( ip );
   }

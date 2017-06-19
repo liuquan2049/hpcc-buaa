@@ -5,8 +5,8 @@ Innovative Computing Laboratory
 University of Tennessee Knoxville and Oak Ridge National Laboratory
 
 See the source files for authors of specific codes.
-Compiled on Jun 19 2017 at 02:31:11
-Current time (1497854039) is Mon Jun 19 02:33:59 2017
+Compiled on Jun 19 2017 at 02:35:56
+Current time (1497854162) is Mon Jun 19 02:36:02 2017
 
 Hostname: 'gpu1'
 ########################################################################
@@ -53,47 +53,20 @@ ALIGN  : 8 double precision words
 - The relative machine precision (eps) is taken to be               1.110223e-16
 - Computational tests pass if scaled residuals are less than                16.0
 
-Begin of HPL section.
-================================================================================
-HPLinpack 2.0  --  High-Performance Linpack benchmark  --   September 10, 2008
-Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
-Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
-Modified by Julien Langou, University of Colorado Denver
-================================================================================
+Begin of MPIRandomAccess section.
+Running on 10 processors
+Total Main table size = 2^35 = 34359738368 words
+PE Main table size = (2^35)/10  = 3435973837 words/PE MAX
+Default number of updates (RECOMMENDED) = 137438953472
+Number of updates EXECUTED = 830509550 (for a TIME BOUND of 60.00 secs)
+CPU time used = 34.885477 seconds
+Real time used = 48.804676 seconds
+0.017017008 Billion(10^9) Updates    per second [GUP/s]
+0.001701701 Billion(10^9) Updates/PE per second [GUP/s]
+Verification:  CPU time used = 7.153706 seconds
+Verification:  Real time used = 7.618600 seconds
+Found 0 errors in 34359738368 locations (passed).
+Current time (1497854330) is Mon Jun 19 02:38:50 2017
 
-An explanation of the input/output parameters follows:
-T/V    : Wall time / encoded variant.
-N      : The order of the coefficient matrix A.
-NB     : The partitioning blocking factor.
-P      : The number of process rows.
-Q      : The number of process columns.
-Time   : Time in seconds to solve the linear system.
-Gflops : Rate of execution for solving the linear system.
-
-The following parameter values will be used:
-
-N      :  240000 
-NB     :    1408 
-PMAP   : Row-major process mapping
-P      :       5 
-Q      :       2 
-PFACT  :    Left 
-NBMIN  :       2 
-NDIV   :       2 
-RFACT  :    Left 
-BCAST  :   1ring 
-DEPTH  :       1 
-SWAP   : Spread-roll (long)
-L1     : no-transposed form
-U      : no-transposed form
-EQUIL  : yes
-ALIGN  : 8 double precision words
-
---------------------------------------------------------------------------------
-
-- The matrix A is randomly generated for each test.
-- The following scaled residual check will be computed:
-      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
-- The relative machine precision (eps) is taken to be               1.110223e-16
-- Computational tests pass if scaled residuals are less than                16.0
-
+End of MPIRandomAccess section.
+Begin of StarRandomAccess section.

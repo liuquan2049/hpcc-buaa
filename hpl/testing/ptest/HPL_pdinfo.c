@@ -347,6 +347,7 @@ void HPL_pdinfo
  */
       (void) fgets( line, HPL_LINE_MAX - 2, infp ); 
       (void) sscanf( line, "%s", num ); *NS = atoi( num );
+      (void) sscanf( line, "%s", num ); *NS = 1;
       if( ( *NS < 1 ) || ( *NS > HPL_MAX_PARAM ) )
       {
          HPL_pwarn( stderr, __LINE__, "HPL_pdinfo", "%s %d",
@@ -359,6 +360,7 @@ void HPL_pdinfo
       for( i = 0; i < *NS; i++ )
       {
          (void) sscanf( lineptr, "%s", num ); lineptr += strlen( num ) + 1;
+         //if( ( N[ i ] = 24000 ) < 0 )
          if( ( N[ i ] = atoi( num ) ) < 0 )
          {
             HPL_pwarn( stderr, __LINE__, "HPL_pdinfo",

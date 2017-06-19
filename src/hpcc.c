@@ -158,37 +158,37 @@ main(int argc, char *argv[]) {
   /*                    StarDGEMM                       */
   /* -------------------------------------------------- */
 
-//  MPI_Barrier( MPI_COMM_WORLD );
+  MPI_Barrier( MPI_COMM_WORLD );
 
-//  BEGIN_IO( myRank, outFname, outputFile);
-//  fprintf( outputFile, "Begin of StarDGEMM section.\n" );
-//  END_IO( myRank, outputFile );
+  BEGIN_IO( myRank, outFname, outputFile);
+  fprintf( outputFile, "Begin of StarDGEMM section.\n" );
+  END_IO( myRank, outputFile );
 
-//  if (params.RunStarDGEMM) HPCC_StarDGEMM( &params );
+  if (params.RunStarDGEMM) HPCC_StarDGEMM( &params );
 
-//  time( &currentTime );
-//  BEGIN_IO( myRank, outFname, outputFile);
-//  fprintf( outputFile,"Current time (%ld) is %s\n",(long)currentTime,ctime(&currentTime));
-//  fprintf( outputFile, "End of StarDGEMM section.\n" );
-//  END_IO( myRank, outputFile );
+  time( &currentTime );
+  BEGIN_IO( myRank, outFname, outputFile);
+  fprintf( outputFile,"Current time (%ld) is %s\n",(long)currentTime,ctime(&currentTime));
+  fprintf( outputFile, "End of StarDGEMM section.\n" );
+  END_IO( myRank, outputFile );
 
   /* -------------------------------------------------- */
   /*                    SingleDGEMM                     */
   /* -------------------------------------------------- */
 
-//  MPI_Barrier( MPI_COMM_WORLD );
+  MPI_Barrier( MPI_COMM_WORLD );
 
-//  BEGIN_IO( myRank, outFname, outputFile);
-//  fprintf( outputFile, "Begin of SingleDGEMM section.\n" );
-//  END_IO( myRank, outputFile );
+  BEGIN_IO( myRank, outFname, outputFile);
+  fprintf( outputFile, "Begin of SingleDGEMM section.\n" );
+  END_IO( myRank, outputFile );
 
-//  if (params.RunSingleDGEMM) HPCC_SingleDGEMM( &params );
+  if (params.RunSingleDGEMM) HPCC_SingleDGEMM( &params );
 
-//  time( &currentTime );
-//  BEGIN_IO( myRank, outFname, outputFile);
-//  fprintf( outputFile,"Current time (%ld) is %s\n",(long)currentTime,ctime(&currentTime));
-//  fprintf( outputFile, "End of SingleDGEMM section.\n" );
-//  END_IO( myRank, outputFile );
+  time( &currentTime );
+  BEGIN_IO( myRank, outFname, outputFile);
+  fprintf( outputFile,"Current time (%ld) is %s\n",(long)currentTime,ctime(&currentTime));
+  fprintf( outputFile, "End of SingleDGEMM section.\n" );
+  END_IO( myRank, outputFile );
 
   /* -------------------------------------------------- */
   /*                    StarSTREAM                      */
@@ -302,17 +302,17 @@ main(int argc, char *argv[]) {
   /*                        HPL                         */
   /* -------------------------------------------------- */
 
-  BEGIN_IO( myRank, outFname, outputFile);
-  fprintf( outputFile, "Begin of HPL section.\n" );
-  END_IO( myRank, outputFile );
+//  BEGIN_IO( myRank, outFname, outputFile);
+//  fprintf( outputFile, "Begin of HPL section.\n" );
+//  END_IO( myRank, outputFile );
 
-  if (params.RunHPL) HPL_main( argc, argv, &params.HPLrdata, &params.Failure );
+//  if (params.RunHPL) HPL_main( argc, argv, &params.HPLrdata, &params.Failure );
 
-  time( &currentTime );
-  BEGIN_IO( myRank, outFname, outputFile);
-  fprintf( outputFile,"Current time (%ld) is %s\n",(long)currentTime,ctime(&currentTime));
-  fprintf( outputFile, "End of HPL section.\n" );
-  END_IO( myRank, outputFile );
+//  time( &currentTime );
+//  BEGIN_IO( myRank, outFname, outputFile);
+//  fprintf( outputFile,"Current time (%ld) is %s\n",(long)currentTime,ctime(&currentTime));
+//  fprintf( outputFile, "End of HPL section.\n" );
+//  END_IO( myRank, outputFile );
 
   hpcc_end:
 
@@ -320,5 +320,6 @@ main(int argc, char *argv[]) {
 
   HPCC_external_finalize( argc, argv, extdata );
 
+  MPI_Finalize();
   return 0;
 }

@@ -243,13 +243,16 @@ void  assignDeviceToProcess()
        SM_COUNT = deviceProp.multiProcessorCount;
        //printf("SM_COUNT = %d\n",SM_COUNT);
        size_t free_bytes, total_bytes;
+       //size_t scratch_size_A = 4096*1024*1024;
        size_t scratch_size_A = 1024*1024*1024;
        cudaMemGetInfo(&free_bytes, &total_bytes);
        //printf("free: %lld MB, Total: %lld MB\n",free_bytes>>20,total_bytes>>20);
+       //scratch_size = (size_t)((imin( ((free_bytes>>20)-352-(scratch_size_A>>20)), 4096)/NSTREAMS)*1024.0*1024.0);
        scratch_size = (size_t)((imin( ((free_bytes>>20)-352-(scratch_size_A>>20)), 1024)/NSTREAMS)*1024.0*1024.0);
        while(scratch_size < 64*1024*1024) 
        {
          scratch_size_A -= 64*1024*1024;
+         //scratch_size = (size_t)((imin( ((free_bytes>>20)-352-(scratch_size_A>>20)), 4096)/NSTREAMS)*1024.0*1024.0);
          scratch_size = (size_t)((imin( ((free_bytes>>20)-352-(scratch_size_A>>20)), 1024)/NSTREAMS)*1024.0*1024.0);
        }
        //scratch_size = (size_t)((1024.0/NSTREAMS)*1024.0*1024.0);

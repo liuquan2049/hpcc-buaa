@@ -573,16 +573,6 @@ HPCC_Stream(HPCC_Params *params, int doIO, MPI_Comm comm, int world_rank,
     dim3 dimGrid(array_elements/dimBlock.x);
     if( array_elements % dimGrid.x != 0 ) dimGrid.x += 1;
 
-    cudaMalloc((void**)&d_a,array_elements*sizeof(double)); //@lq
-    cudaMalloc((void**)&d_b,array_elements*sizeof(double));
-    cudaMalloc((void**)&d_c,array_elements*sizeof(double));
-
-    cudaMemcpy(d_a,a,sizeof(double)*array_elements,cudaMemcpyHostToDevice); //@lq
-    cudaMemcpy(d_b,b,sizeof(double)*array_elements,cudaMemcpyHostToDevice);
-    cudaMemcpy(d_c,c,sizeof(double)*array_elements,cudaMemcpyHostToDevice);
- //   stat = cublasCreate(&handle);
-  
-
     printf("N: %d\n", array_elements);
     printf("dimGrid: %d\n", dimGrid);
     printf("dimBlock: %d\n", dimBlock);
@@ -593,7 +583,18 @@ HPCC_Stream(HPCC_Params *params, int doIO, MPI_Comm comm, int world_rank,
         MPI_Barrier( comm );
         times[0][k] = MPI_Wtime();
 #ifdef TUNED
-        tuned_STREAM_Copy<<<dimGrid, dimBlock>>>(d_a, d_c, array_elements);
+        if(k==0){
+        cudaMalloc((void**)&d_a,array_elements*sizeof(double)); //@lq
+        cudaMalloc((void**)&d_b,array_elements*sizeof(double));
+        cudaMalloc((void**)&d_c,array_elements*sizeof(double));
+
+        cudaMemcpy(d_a,a,sizeof(double)*array_elements,cudaMemcpyHostToDevice); //@lq
+        cudaMemcpy(d_b,b,sizeof(double)*array_elements,cudaMemcpyHostToDevice);
+        cudaMemcpy(d_c,c,sizeof(double)*array_elements,cudaMemcpyHostToDevice);
+	}
+        
+        tuned_STREAM_Copy<<<dimGrid, dimBlock>>>(d_a, d_c, array_elements); //@lq
+        cudaThreadSynchronize();//@lq
 #else
 #ifdef _OPENMP
 #pragma omp parallel for
@@ -601,7 +602,6 @@ HPCC_Stream(HPCC_Params *params, int doIO, MPI_Comm comm, int world_rank,
         for (j=0; j<array_elements; j++)
           d_c[j] = d_a[j];
 #endif
-        cudaThreadSynchronize();//@lq
         MPI_Barrier( comm );
         times[0][k] = MPI_Wtime() - times[0][k];
 
@@ -609,7 +609,8 @@ HPCC_Stream(HPCC_Params *params, int doIO, MPI_Comm comm, int world_rank,
         MPI_Barrier( comm );
         times[1][k] = MPI_Wtime();
 #ifdef TUNED
-        tuned_STREAM_Scale<<<dimGrid, dimBlock>>>(d_b, d_c, scalar, array_elements);
+        tuned_STREAM_Scale<<<dimGrid, dimBlock>>>(d_b, d_c, scalar, array_elements); //@lq
+        cudaThreadSynchronize();//@lq
 #else
 #ifdef _OPENMP
 #pragma omp parallel for
@@ -617,7 +618,6 @@ HPCC_Stream(HPCC_Params *params, int doIO, MPI_Comm comm, int world_rank,
         for (j=0; j<array_elements; j++)
           d_b[j] = scalar*d_c[j];
 #endif
-        cudaThreadSynchronize();//@lq
         MPI_Barrier( comm );
         times[1][k] = MPI_Wtime() - times[1][k];
 
@@ -625,7 +625,8 @@ HPCC_Stream(HPCC_Params *params, int doIO, MPI_Comm comm, int world_rank,
         MPI_Barrier( comm );
         times[2][k] = MPI_Wtime();
 #ifdef TUNED
-        tuned_STREAM_Add<<<dimGrid, dimBlock>>>(d_a, d_b, d_c, array_elements);
+        tuned_STREAM_Add<<<dimGrid, dimBlock>>>(d_a, d_b, d_c, array_elements); //@lq
+        cudaThreadSynchronize();//@lq
 #else
 #ifdef _OPENMP
 #pragma omp parallel for
@@ -633,7 +634,6 @@ HPCC_Stream(HPCC_Params *params, int doIO, MPI_Comm comm, int world_rank,
         for (j=0; j<array_elements; j++)
           d_c[j] = d_a[j]+d_b[j];
 #endif
-        cudaThreadSynchronize();//@lq
         MPI_Barrier( comm );
         times[2][k] = MPI_Wtime() - times[2][k];
 
@@ -641,7 +641,17 @@ HPCC_Stream(HPCC_Params *params, int doIO, MPI_Comm comm, int world_rank,
         MPI_Barrier( comm );
         times[3][k] = MPI_Wtime();
 #ifdef TUNED
-        tuned_STREAM_Triad<<<dimGrid, dimBlock>>>(d_a, d_b, d_c, scalar, array_elements);
+        tuned_STREAM_Triad<<<dimGrid, dimBlock>>>(d_a, d_b, d_c, scalar, array_elements); //@lq
+
+        if(k==NTIMES-1){
+        cudaMemcpy(a,d_a,sizeof(double)*array_elements,cudaMemcpyDeviceToHost); //@lq
+        cudaMemcpy(b,d_b,sizeof(double)*array_elements,cudaMemcpyDeviceToHost);
+        cudaMemcpy(c,d_c,sizeof(double)*array_elements,cudaMemcpyDeviceToHost);
+        cudaFree(d_a);
+        cudaFree(d_b);
+        cudaFree(d_c);
+        }
+        cudaThreadSynchronize();//@lq
 #else
 #ifdef _OPENMP
 #pragma omp parallel for
@@ -649,19 +659,12 @@ HPCC_Stream(HPCC_Params *params, int doIO, MPI_Comm comm, int world_rank,
         for (j=0; j<array_elements; j++)
           d_a[j] = d_b[j]+scalar*d_c[j];
 #endif
-        cudaThreadSynchronize();//@lq
         MPI_Barrier( comm );
         times[3][k] = MPI_Wtime() - times[3][k];
         
     }
 
-    cudaMemcpy(a,d_a,sizeof(double)*array_elements,cudaMemcpyDeviceToHost); //@lq
-    cudaMemcpy(b,d_b,sizeof(double)*array_elements,cudaMemcpyDeviceToHost);
-    cudaMemcpy(c,d_c,sizeof(double)*array_elements,cudaMemcpyDeviceToHost);
-    cudaFree(d_a);
-    cudaFree(d_b);
-    cudaFree(d_c);
-    t0 = MPI_Wtime();
+   t0 = MPI_Wtime();
 
 /* @lq debug
     for (j=0; j<array_elements; j++){
@@ -727,7 +730,7 @@ HPCC_Stream(HPCC_Params *params, int doIO, MPI_Comm comm, int world_rank,
       if (doIO) fprintf( outFile, HLINE);
     }
     
-    printf("failure: %d\n", failure);
+    printf("failure: %d\n", *failure);
 
     HPCC_free(AvgErrByRank);
 

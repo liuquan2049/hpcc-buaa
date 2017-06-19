@@ -181,6 +181,13 @@ int HPL_main( ARGC, ARGV, rdata, failure )
                &ntps, topval, &ndhs, ndhval, &fswap, &tswap, &L1notran,
                &Unotran, &equil, &align );
 
+//@@ add by lq to change problem size of HPL
+
+   ns=1;
+   *nval=184320;
+
+//@@ end add
+
 #ifdef CUDA
    int input_error_exit = 0;
 

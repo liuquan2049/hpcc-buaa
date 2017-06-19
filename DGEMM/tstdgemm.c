@@ -90,6 +90,7 @@ HPCC_TestDGEMM(HPCC_Params *params, int doIO, double *UGflops, int *Un, int *Ufa
   }
 
   n = (int)(sqrt( params->HPLMaxProcMem / sizeof(double) / 3 + 0.25 ) - 0.5);
+  n = 23093; //@@lq change the problem size to get better performance
   if (n < 0) n = -n; /* if 'n' has overflown an integer */
   l_n = n;
   lda = ldb = ldc = n;
@@ -131,22 +132,19 @@ HPCC_TestDGEMM(HPCC_Params *params, int doIO, double *UGflops, int *Un, int *Ufa
   printf("myid : %d\n",myid); //@hpccdebug
   printf("N    : %d\n",n);    //@hpccdebug
 
+  t0 = MPI_Wtime();
+//  HPL_dgemm( HplColumnMajor, HplNoTrans, HplNoTrans, n, n, n, alpha, a, n, b, n, beta, c, n ); // Init version
   cudaMalloc((void**)&d_a,(n*n+2)*sizeof(double));
   cudaMalloc((void**)&d_b,n*n*sizeof(double));
   cudaMalloc((void**)&d_c,n*n*sizeof(double));
 
-  //t0 = MPI_Wtime();
   cudaMemcpy(d_a,a,sizeof(double)*n*n,cudaMemcpyHostToDevice);
   cudaMemcpy(d_b,b,sizeof(double)*n*n,cudaMemcpyHostToDevice);
   cudaMemcpy(d_c,c,sizeof(double)*n*n,cudaMemcpyHostToDevice);
   stat = cublasCreate(&handle);
 
-  t0 = MPI_Wtime();
-//  HPL_dgemm( HplColumnMajor, HplNoTrans, HplNoTrans, n, n, n, alpha, a, n, b, n, beta, c, n );
-//  cublasDgemm(CUBLAS_OP_N,CUBLAS_OP_N,n,n,n,&alpha,d_a,n,d_b,n,&beta,d_c,n);
   cublasDgemm(handle,CUBLAS_OP_N,CUBLAS_OP_N,n,n,n,&alpha,d_a,n,d_b,n,&beta,d_c,n);
   cudaThreadSynchronize();
-  t1 = MPI_Wtime();
 
   cudaMemcpy(c,d_c,sizeof(double)*n*n,cudaMemcpyDeviceToHost);
 
@@ -154,10 +152,8 @@ HPCC_TestDGEMM(HPCC_Params *params, int doIO, double *UGflops, int *Un, int *Ufa
   cudaFree(d_b);
   cudaFree(d_c);
   cublasDestroy(handle);
-//  t1 = wallclock();
-//  free(a);
-//  free(b);
-//  free(c);
+  
+  t1 = MPI_Wtime();
 
   t1 -= t0;
   dn = (double)n;
